@@ -1,6 +1,34 @@
 # CO₂ CEMS Thermal Modeling
 
+[![Open Notebook 1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-thermal-modeling/blob/main/notebooks/01_selecao_unidade_estudo.ipynb)
+[![Open Notebook 2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-thermal-modeling/blob/main/notebooks/02_tratamento_dados.ipynb)
+
 Preparação e análise de dados operacionais para futura modelagem de emissões horárias de CO₂ em unidade termelétrica a carvão, utilizando dados públicos da U.S. EPA e técnicas de pré-processamento e redução de dimensionalidade trabalhadas na disciplina **EQM2118 – Modelagem Matemática com Aplicação de Inteligência Artificial**.
+
+## Executar o projeto
+
+Os arquivos `.ipynb` são notebooks executáveis. No GitHub eles são exibidos de forma estática; para executar as células, utilize os botões **Open in Colab** acima.
+
+A execução deve seguir a ordem:
+
+1. **Notebook 1 — seleção da unidade de estudo**: consulta os dados da EPA, executa o processo de seleção e gera os artefatos necessários para a etapa seguinte;
+2. **Notebook 2 — tratamento e preparação dos dados**: carrega automaticamente a unidade selecionada e os dados horários produzidos pelo Notebook 1.
+
+O Notebook 1 utiliza uma chave da API da EPA armazenada como segredo do Google Colab com o nome `EPA_API_KEY`. A chave não é armazenada no repositório.
+
+Os notebooks utilizam o Google Drive como área persistente de trabalho, na pasta:
+
+```text
+/content/drive/MyDrive/co2-cems-thermal-modeling
+```
+
+Como os arquivos horários e intermediários podem ser volumosos, eles não são versionados no GitHub. Por isso, para reproduzir integralmente o fluxo em uma nova conta do Google Drive, recomenda-se executar primeiro o Notebook 1 e, em seguida, o Notebook 2.
+
+Para execução local, as principais dependências estão registradas em [`requirements.txt`](requirements.txt):
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Contexto do projeto
 
@@ -161,6 +189,7 @@ O `MinMaxScaler` é ajustado somente sobre o conjunto de treino e posteriormente
 ```text
 co2-cems-thermal-modeling/
 ├── README.md
+├── requirements.txt
 ├── .gitignore
 ├── notebooks/
 │   ├── 01_selecao_unidade_estudo.ipynb
