@@ -1,13 +1,9 @@
-# Presentations
+# Apresentação do Trabalho
 
-This folder stores presentation materials generated for the project.
+A apresentação em vídeo do **Trabalho 1** está disponível no YouTube.
 
-## Video presentation
+[![Assistir à apresentação no YouTube](https://img.youtube.com/vi/EUEqmm9nRHQ/hqdefault.jpg)](https://youtu.be/EUEqmm9nRHQ)
 
-Recommended filename:
+▶ **[Assistir à apresentação no YouTube](https://youtu.be/EUEqmm9nRHQ)**
 
-`apresentacao_trabalho1_emissoes_co2.mp4`
-
-Keep presentation videos here so they remain separated from figures, tables, and written reports.
-
-> Note: GitHub blocks regular repository files larger than 100 MB. If the final video exceeds this limit, use Git LFS or store the video externally and keep the access link here.
+O vídeo apresenta o desenvolvimento do projeto de modelagem de emissões horárias de CO₂ em unidade termelétrica a carvão, incluindo seleção da unidade de estudo, tratamento dos dados, engenharia de atributos, análise exploratória por PCA e preparação da base experimental.
