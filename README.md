@@ -5,6 +5,14 @@
 
 Preparação e análise de dados operacionais para futura modelagem de emissões horárias de CO₂ em unidade termelétrica a carvão, utilizando dados públicos da U.S. EPA e técnicas de pré-processamento e redução de dimensionalidade trabalhadas na disciplina **EQM2118 – Modelagem Matemática com Aplicação de Inteligência Artificial**.
 
+## Apresentação do Trabalho
+
+A apresentação em vídeo do **Trabalho 1** está disponível no YouTube.
+
+[![Assistir à apresentação no YouTube](https://img.youtube.com/vi/EUEqmm9nRHQ/hqdefault.jpg)](https://youtu.be/EUEqmm9nRHQ)
+
+▶ **[Assistir à apresentação no YouTube](https://youtu.be/EUEqmm9nRHQ)**
+
 ## Executar o projeto
 
 Os arquivos `.ipynb` são notebooks executáveis. No GitHub eles são exibidos de forma estática; para executar as células, utilize os botões **Open in Colab** acima.
@@ -205,7 +213,9 @@ co2-cems-thermal-modeling/
     │   ├── relatorio_selecao_unidade.md
     │   └── relatorio_tratamento_dados.md
     ├── figures/
-    └── tables/
+    ├── tables/
+    └── presentations/
+        └── README.md
 ```
 
 Os diretórios de dados permanecem sem arquivos pesados no GitHub por opção de versionamento. O arquivo `.gitignore` impede o envio acidental de dados brutos, arquivos intermediários e credenciais.
