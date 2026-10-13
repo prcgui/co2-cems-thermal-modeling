@@ -1,253 +1,156 @@
 # CO₂ CEMS Thermal Modeling
 
-[![Open Notebook 1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-thermal-modeling/blob/main/notebooks/01_selecao_unidade_estudo.ipynb)
-[![Open Notebook 2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-thermal-modeling/blob/main/notebooks/02_tratamento_dados.ipynb)
-[![Open Notebook 3A in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-thermal-modeling/blob/main/notebooks/03A_modelagem_preditiva_co2.ipynb)
+Projeto desenvolvido na disciplina **EQM2118: Modelagem Matemática com Aplicação de Inteligência Artificial**, com dados horários U.S. EPA CEMS/CAMPD e foco na previsão de emissões de CO₂ de uma unidade termelétrica a carvão.
 
-Preparação e análise de dados operacionais para futura modelagem de emissões horárias de CO₂ em unidade termelétrica a carvão, utilizando dados públicos da U.S. EPA e técnicas de pré-processamento e redução de dimensionalidade trabalhadas na disciplina **EQM2118 – Modelagem Matemática com Aplicação de Inteligência Artificial**.
+A unidade piloto é a **Iatan Unit 2**, Facility ID 6065, Missouri. A série inicial cobre 2025 com resolução horária.
 
-## Apresentação do Trabalho
+## Objetivo atual
 
-A apresentação em vídeo do **Trabalho 1** está disponível no YouTube.
+A linha experimental investiga:
 
-[![Assistir à apresentação no YouTube](https://img.youtube.com/vi/EUEqmm9nRHQ/hqdefault.jpg)](https://youtu.be/EUEqmm9nRHQ)
+- capacidade de prever a massa horária de CO₂;
+- efeito da família de modelo sobre o desempenho;
+- valor incremental de informações de trajetória operacional;
+- robustez temporal intraplanta;
+- efeito do aumento do histórico de treinamento;
+- capacidade de prever períodos futuros completamente fora da amostra.
 
-▶ **[Assistir à apresentação no YouTube](https://youtu.be/EUEqmm9nRHQ)**
+Nenhum modelo obtido até o Notebook 03A.03 é tratado como modelo final da Iatan.
 
-## Executar o projeto
+## Notebooks
 
-Os arquivos `.ipynb` são notebooks executáveis. No GitHub eles são exibidos de forma estática; para executar as células, utilize os botões **Open in Colab** acima.
+| Etapa | Notebook | Objetivo | Google Colab |
+|---|---|---|---|
+| 01 | [01_selecao_unidade_estudo.ipynb](notebooks/01_selecao_unidade_estudo.ipynb) | Seleção da unidade piloto | [Abrir no Colab](https://colab.research.google.com/drive/11KpbBLZD8xo9CS2H6HKUW2Bd32spE-_S) |
+| 02 | [02_tratamento_dados.ipynb](notebooks/02_tratamento_dados.ipynb) | Auditoria, tratamento e engenharia de atributos | [Abrir no Colab](https://colab.research.google.com/drive/1PtW8T_oWDK9-e9OHMkgngsNpGTJ87PyN) |
+| 03A | [03A_modelagem_preditiva_co2.ipynb](notebooks/03A_modelagem_preditiva_co2.ipynb) | Modelagem preditiva inicial | [Abrir no Colab](https://colab.research.google.com/drive/18alc2xYDM511l5pSXpIXXxkDFrSWAC8M) |
+| 03A.01 | [03A.01_modelagem_preditiva_co2.ipynb](notebooks/03A.01_modelagem_preditiva_co2.ipynb) | Trajetória temporal enriquecida | [Abrir no Colab](https://colab.research.google.com/drive/1DVjl1v-wgQgWWtIyfE_bkCAdiVVjqJuW) |
+| 03A.02 | [03A.02_comparacao_modelos_gradient_boosting.ipynb](notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb) | MLP x XGBoost e validação temporal progressiva | [Abrir no Colab](https://colab.research.google.com/drive/1BRbZkilK4omkxV7QjMbx3uPYkI7acsNY) |
+| 03A.03 | [03A.03_otimizacao_pareada_xgboost.ipynb](notebooks/03A.03_otimizacao_pareada_xgboost.ipynb) | Busca pareada A x B e valor incremental da trajetória | [Abrir no Colab](https://colab.research.google.com/drive/1wbDqQxBoOi4qURULPh9EFTnNXpFUhgYj) |
 
-A execução deve seguir a ordem:
+## Resultados até o Notebook 03A.03
 
-1. **Notebook 1 — seleção da unidade de estudo**: consulta os dados da EPA, executa o processo de seleção e gera os artefatos necessários para a etapa seguinte;
-2. **Notebook 2 — tratamento e preparação dos dados**: carrega automaticamente a unidade selecionada, trata a série e prepara a base experimental;
-3. **Notebook 3A — modelagem preditiva de CO₂**: compara um cenário baseado apenas na carga instantânea com outro que incorpora contexto e trajetória operacional.
+### 03A.01: enriquecimento temporal com MLP
 
-O Notebook 1 utiliza uma chave da API da EPA armazenada como segredo do Google Colab com o nome `EPA_API_KEY`. A chave não é armazenada no repositório.
+O Cenário C, com trajetória temporal enriquecida, não apresentou melhora global consistente sobre o Cenário B.
 
-Os notebooks utilizam o Google Drive como área persistente de trabalho, na pasta:
+Principais resultados:
 
-```text
-/content/drive/MyDrive/co2-cems-thermal-modeling
-```
+- MAE B: **61,61**;
+- MAE C: **62,65**;
+- melhora de C em startups: **22,67%**;
+- melhora de C em rampas intensas: **1,33%**.
 
-Como os arquivos horários e intermediários podem ser volumosos, eles não são versionados no GitHub. Por isso, para reproduzir integralmente o fluxo em uma nova conta do Google Drive, recomenda-se executar primeiro o Notebook 1 e, em seguida, o Notebook 2.
+O resultado indicou que simplesmente ampliar o número de variáveis temporais não solucionava as limitações da MLP.
 
-Para execução local, as principais dependências estão registradas em [`requirements.txt`](requirements.txt):
+### 03A.02: comparação com XGBoost
 
-```bash
-pip install -r requirements.txt
-```
+A substituição da MLP por XGBoost produziu a principal melhora observada na sequência experimental.
 
-## Contexto do projeto
+Validação temporal progressiva:
 
-O projeto investiga se a inclusão de informações sobre **estado e trajetória operacional** de uma unidade termelétrica melhora a estimação de suas emissões horárias de CO₂ em comparação com uma abordagem baseada apenas na carga elétrica instantânea. O teste dessa hipótese é realizado no **Notebook 3A**.
-
-A questão de pesquisa adotada é:
-
-> **Em que medida a inclusão de informações sobre estados e transições operacionais melhora a estimação das emissões horárias de CO₂ de uma unidade termelétrica a carvão em relação ao uso apenas da carga atual?**
-
-Nesta fase, correspondente ao **Trabalho 1**, o foco está na análise crítica da base de dados, seleção da unidade de estudo, tratamento dos dados, engenharia de atributos, análise exploratória por PCA e preparação do conjunto experimental. O treinamento dos modelos de inteligência artificial será realizado em etapa posterior.
-
-## Fonte dos dados
-
-Os dados são provenientes da **U.S. Environmental Protection Agency (EPA)**, a partir de dados horários de monitoramento contínuo de emissões (CEMS/CAMPD).
-
-O período considerado é o ano de **2025**, com resolução horária.
-
-Os arquivos brutos e intermediários de grande volume não são versionados neste repositório. O código necessário para seleção, tratamento e análise permanece documentado nos notebooks.
-
-## Seleção da unidade de estudo
-
-A seleção partiu de uma população ampla de unidades termelétricas a carvão e aplicou critérios sucessivos de elegibilidade estrutural, disponibilidade de dados, cobertura de monitoramento, qualidade da série horária e comportamento operacional.
-
-A unidade selecionada foi:
-
-- **Facility:** Iatan
-- **Facility ID:** 6065
-- **Unit:** 2
-- **Estado:** Missouri (MO)
-- **Ano:** 2025
-- **Registros horários:** 8.760
-
-A Iatan Unit 2 foi escolhida por apresentar boa qualidade dos dados, número relevante de transições operacionais, ampla faixa de carga e variabilidade suficiente para investigar efeitos de estados e trajetórias operacionais.
-
-O processo completo está documentado em:
-
-- [`notebooks/01_selecao_unidade_estudo.ipynb`](notebooks/01_selecao_unidade_estudo.ipynb)
-- [`outputs/reports/relatorio_selecao_unidade.md`](outputs/reports/relatorio_selecao_unidade.md)
-
-## Tratamento e preparação dos dados
-
-O segundo notebook realiza a preparação da série da unidade selecionada.
-
-As principais etapas foram:
-
-1. auditoria estrutural e temporal da base;
-2. análise e tratamento de dados faltantes;
-3. detecção exploratória de outliers;
-4. engenharia de atributos orientada ao processo;
-5. análise de componentes principais (PCA);
-6. definição da base experimental;
-7. divisão temporal em treino, validação e teste;
-8. normalização Min–Max.
-
-O processo completo está documentado em:
-
-- [`notebooks/02_tratamento_dados.ipynb`](notebooks/02_tratamento_dados.ipynb)
-- [`outputs/reports/relatorio_tratamento_dados.md`](outputs/reports/relatorio_tratamento_dados.md)
-
-## Modelagem preditiva — Notebook 3A
-
-O terceiro notebook compara dois cenários sob a mesma arquitetura de MLP e o mesmo protocolo temporal:
-
-- **Cenário A:** carga instantânea `P(t)`;
-- **Cenário B:** carga instantânea + memória e trajetória operacional.
-
-A divisão temporal permanece cronológica:
-
-- treino: janeiro a setembro;
-- validação: outubro;
-- teste: novembro e dezembro.
-
-As métricas principais são **MAE, RMSE e R²**, calculadas no conjunto de teste após a conversão das previsões para a unidade física original.
-
-O notebook está disponível em:
-
-- [`notebooks/03A_modelagem_preditiva_co2.ipynb`](notebooks/03A_modelagem_preditiva_co2.ipynb)
-
-## Qualidade dos dados
-
-A série selecionada contém 8.760 registros horários e cobre integralmente o ano de 2025.
-
-Na auditoria foram observados:
-
-- ausência de timestamps duplicados;
-- ausência de lacunas na sequência horária;
-- ausência de dados faltantes de carga ou CO₂ durante a operação;
-- 6.249 horas operacionais;
-- 2.511 horas com a unidade desligada;
-- 77 horas de operação parcial.
-
-Os valores ausentes de carga e CO₂ nas horas OFF foram preservados nas variáveis originais e representados como zero apenas em novas variáveis tratadas, destinadas às etapas posteriores de análise e modelagem.
-
-## Engenharia de atributos
-
-Foram criadas variáveis capazes de representar não apenas a condição instantânea, mas também a trajetória recente da unidade, incluindo:
-
-- carga atual;
-- carga da hora anterior;
-- variação horária da carga;
-- intensidade absoluta da variação;
-- média de carga nas três horas anteriores;
-- Operating Time da hora anterior;
-- eventos de startup e shutdown;
-- direção da mudança de carga;
-- tempo desde o último startup;
-- hora do dia;
-- mês.
-
-No período analisado foram identificados **38 startups** e **37 shutdowns**.
-
-Nenhuma variável derivada de CO₂ foi utilizada como atributo preditivo, evitando vazamento da variável-alvo.
-
-## Análise de outliers
-
-A detecção exploratória de outliers foi realizada pelo método do **intervalo interquartil (IQR)** somente durante as horas operacionais.
-
-Foram encontrados:
-
-- **0 outliers de carga**;
-- **3 outliers de CO₂**, equivalentes a aproximadamente 0,05% das horas operacionais.
-
-Os registros não foram removidos automaticamente. Em processos industriais, valores estatisticamente extremos podem corresponder a regimes operacionais reais e, portanto, devem ser avaliados em conjunto com o contexto físico do processo.
-
-## PCA exploratória
-
-A **Análise de Componentes Principais (PCA)** foi aplicada a sete variáveis operacionais com o objetivo de investigar redundância e potencial de redução de dimensionalidade.
-
-A variância explicada foi aproximadamente:
-
-| Componente | Variância explicada | Variância acumulada |
+| Cenário | Features | MAE médio |
 |---|---:|---:|
-| PC1 | 44,07% | 44,07% |
-| PC2 | 16,51% | 60,57% |
-| PC3 | 14,15% | 74,72% |
-| PC4 | 13,27% | 87,99% |
-| PC5 | 11,66% | 99,65% |
+| A | 1 | 56,61 |
+| B | 7 | 56,23 |
+| C | 24 | 55,69 |
 
-Foram necessárias **cinco componentes para superar 90% da variância**, de modo que a redução dimensional foi considerada relativamente pequena frente à perda de interpretabilidade física das variáveis originais.
+Holdout histórico de novembro e dezembro de 2025:
 
-Os loadings mostraram ainda uma interpretação operacional consistente:
+| Cenário | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| A-XGBoost | 22,96 | 28,06 | 0,9809 |
+| B-XGBoost | 23,27 | 28,81 | 0,9798 |
+| C-XGBoost | 25,02 | 30,63 | 0,9772 |
 
-- **PC1:** predominantemente associada ao nível de carga;
-- **PC2:** predominantemente associada à dinâmica e às rampas de carga.
+Os sanity checks não indicaram target leakage, vazamento temporal ou desalinhamento das bases.
 
-A PCA foi, portanto, mantida como ferramenta exploratória e não como substituta das features originais.
+O holdout de novembro e dezembro é mantido como **referência histórica de comparação**, não como teste final completamente cego, pois já foi observado durante o desenvolvimento.
 
-## Decisões metodológicas
+### 03A.03: busca pareada A x B
 
-Nem todas as técnicas estudadas foram aplicadas automaticamente. A escolha foi condicionada à natureza do problema e dos dados.
+Foram avaliadas 30 configurações de hiperparâmetros para A e B nos mesmos cinco folds temporais, totalizando 300 ajustes.
 
-| Técnica | Decisão | Justificativa |
-|---|---|---|
-| Tratamento de faltantes | Aplicado | Ausências estruturais associadas ao estado OFF |
-| Interpolação por spline | Não aplicada | Não existem lacunas durante a operação |
-| Detecção de outliers por IQR | Aplicada | Diagnóstico de valores extremos sem remoção automática |
-| Feature engineering | Aplicada | Necessária para representar estados e trajetórias operacionais |
-| PCA | Aplicada de forma exploratória | Avaliação de redundância e redução de dimensionalidade |
-| SMOTE | Não aplicado | O problema futuro é de regressão, não de classificação |
-| Divisão aleatória treino/teste | Não aplicada | A ordem temporal deve ser preservada |
-| Normalização Min–Max | Aplicada | Preparação para modelos sensíveis à escala |
+Resultados:
 
-## Preparação experimental
+- B venceu **4 de 5 folds**;
+- ganho médio de B na validação temporal: **+0,89%**;
+- ganho de B no holdout histórico: **-1,18%**;
+- ganho de B nas primeiras 6 h após startup: **-4,34%**;
+- ganho de B em rampas intensas: **+4,88%**.
 
-A base destinada à futura modelagem considera apenas as horas em que a unidade está operando.
+Conclusão atual:
 
-A separação temporal foi definida como:
+> Para a Iatan Unit 2, considerando os dados de 2025 e as variáveis de trajetória avaliadas, não foi observada evidência robusta de ganho preditivo global e consistente da trajetória operacional além daquele obtido com a carga instantânea.
 
-- **Treino:** janeiro a setembro de 2025 — 4.894 observações;
-- **Validação:** outubro de 2025 — 211 observações;
-- **Teste:** novembro e dezembro de 2025 — 1.144 observações.
+O efeito positivo observado em rampas intensas permanece como hipótese a ser reavaliada com maior histórico.
 
-O `MinMaxScaler` é ajustado somente sobre o conjunto de treino e posteriormente aplicado aos períodos de validação e teste, evitando data leakage.
+## Decisão metodológica
 
-## Estrutura do repositório
+O A-XGBoost do Notebook 03A.02 é o **modelo de referência atual**, por apresentar o melhor desempenho absoluto observado até aqui com apenas uma feature.
+
+Ele ainda não é considerado modelo final.
+
+Antes de qualquer generalização entre termelétricas, será investigada a **generalização temporal intraplanta** da Iatan.
+
+As questões seguintes são:
+
+1. mais anos de dados reduzem o erro?;
+2. qual volume histórico é suficiente para estabilizar o desempenho?;
+3. o modelo consegue prever um período futuro completamente não observado?;
+4. o desempenho permanece estável entre diferentes anos?;
+5. existe drift na relação entre carga e CO₂?;
+6. a trajetória continua apresentando pequeno ganho incremental com maior histórico?;
+7. em quais condições operacionais ocorrem os maiores erros?;
+8. é necessário retreinamento periódico?
+
+## Próximo experimento
+
+Notebook planejado:
+
+**03A.04_volume_dados_generalizacao_temporal_iatan.ipynb**
+
+Pergunta central:
+
+> A ampliação do histórico de treinamento melhora de forma consistente a capacidade de prever emissões futuras de CO₂ da Iatan Unit 2?
+
+A estratégia incluirá curvas de aprendizado temporal, múltiplos anos, teste verdadeiramente fora da amostra, comparação entre modelo estático e atualização periódica, análise de drift e métricas de erro normalizadas.
+
+## Artefatos
+
+Os produtos gerados estão versionados em:
+
+- [outputs/reports](outputs/reports): relatórios dos experimentos e diagnósticos;
+- [outputs/tables](outputs/tables): métricas, previsões, folds, sanity checks e resultados da busca pareada;
+- [outputs/figures](outputs/figures): figuras de validação, previsões, importância de variáveis e diagnósticos operacionais.
+
+Arquivos brutos e intermediários volumosos, credenciais e modelos binários não são versionados.
+
+## Estrutura
 
 ```text
 co2-cems-thermal-modeling/
 ├── README.md
 ├── requirements.txt
-├── .gitignore
 ├── notebooks/
 │   ├── 01_selecao_unidade_estudo.ipynb
-│   └── 02_tratamento_dados.ipynb
+│   ├── 02_tratamento_dados.ipynb
+│   ├── 03A_modelagem_preditiva_co2.ipynb
+│   ├── 03A.01_modelagem_preditiva_co2.ipynb
+│   ├── 03A.02_comparacao_modelos_gradient_boosting.ipynb
+│   └── 03A.03_otimizacao_pareada_xgboost.ipynb
 ├── data/
-│   ├── raw/
-│   ├── interim/
-│   └── processed/
 ├── pipeline/
-│   └── selected_unit.json
 └── outputs/
     ├── reports/
-    │   ├── relatorio_selecao_unidade.md
-    │   └── relatorio_tratamento_dados.md
-    ├── figures/
     ├── tables/
+    ├── figures/
     └── presentations/
-        └── README.md
 ```
 
-Os diretórios de dados permanecem sem arquivos pesados no GitHub por opção de versionamento. O arquivo `.gitignore` impede o envio acidental de dados brutos, arquivos intermediários e credenciais.
+## Apresentação
 
-## Próximas etapas
-
-A fase seguinte do projeto deverá desenvolver e avaliar modelos de regressão para estimar as emissões horárias de CO₂.
-
-A comparação experimental será estruturada de modo a investigar o ganho obtido ao passar de uma representação baseada apenas na carga instantânea para outra que incorpore informações sobre trajetória e estado operacional.
-
-As métricas previstas para avaliação incluem **MAE, RMSE e R²**, sempre respeitando a separação temporal dos dados.
+Vídeo do Trabalho 1: https://youtu.be/EUEqmm9nRHQ
 
 ## Autores
 
@@ -257,6 +160,6 @@ As métricas previstas para avaliação incluem **MAE, RMSE e R²**, sempre resp
 
 ## Disciplina
 
-**EQM2118 – Modelagem Matemática com Aplicação de Inteligência Artificial**  
+**EQM2118: Modelagem Matemática com Aplicação de Inteligência Artificial**  
 Professor: **Brunno Ferreira dos Santos**  
 PUC-Rio
