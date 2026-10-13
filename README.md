@@ -2,6 +2,7 @@
 
 [![Open Notebook 1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-thermal-modeling/blob/main/notebooks/01_selecao_unidade_estudo.ipynb)
 [![Open Notebook 2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-thermal-modeling/blob/main/notebooks/02_tratamento_dados.ipynb)
+[![Open Notebook 3A in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-thermal-modeling/blob/main/notebooks/03A_modelagem_preditiva_co2.ipynb)
 
 Preparação e análise de dados operacionais para futura modelagem de emissões horárias de CO₂ em unidade termelétrica a carvão, utilizando dados públicos da U.S. EPA e técnicas de pré-processamento e redução de dimensionalidade trabalhadas na disciplina **EQM2118 – Modelagem Matemática com Aplicação de Inteligência Artificial**.
 
@@ -20,7 +21,8 @@ Os arquivos `.ipynb` são notebooks executáveis. No GitHub eles são exibidos d
 A execução deve seguir a ordem:
 
 1. **Notebook 1 — seleção da unidade de estudo**: consulta os dados da EPA, executa o processo de seleção e gera os artefatos necessários para a etapa seguinte;
-2. **Notebook 2 — tratamento e preparação dos dados**: carrega automaticamente a unidade selecionada e os dados horários produzidos pelo Notebook 1.
+2. **Notebook 2 — tratamento e preparação dos dados**: carrega automaticamente a unidade selecionada, trata a série e prepara a base experimental;
+3. **Notebook 3A — modelagem preditiva de CO₂**: compara um cenário baseado apenas na carga instantânea com outro que incorpora contexto e trajetória operacional.
 
 O Notebook 1 utiliza uma chave da API da EPA armazenada como segredo do Google Colab com o nome `EPA_API_KEY`. A chave não é armazenada no repositório.
 
@@ -40,7 +42,7 @@ pip install -r requirements.txt
 
 ## Contexto do projeto
 
-O projeto investiga se a inclusão de informações sobre **estado e trajetória operacional** de uma unidade termelétrica pode melhorar, em etapas futuras, a estimação de suas emissões horárias de CO₂ em comparação com uma abordagem baseada apenas na carga elétrica instantânea.
+O projeto investiga se a inclusão de informações sobre **estado e trajetória operacional** de uma unidade termelétrica melhora a estimação de suas emissões horárias de CO₂ em comparação com uma abordagem baseada apenas na carga elétrica instantânea. O teste dessa hipótese é realizado no **Notebook 3A**.
 
 A questão de pesquisa adotada é:
 
@@ -95,6 +97,25 @@ O processo completo está documentado em:
 
 - [`notebooks/02_tratamento_dados.ipynb`](notebooks/02_tratamento_dados.ipynb)
 - [`outputs/reports/relatorio_tratamento_dados.md`](outputs/reports/relatorio_tratamento_dados.md)
+
+## Modelagem preditiva — Notebook 3A
+
+O terceiro notebook compara dois cenários sob a mesma arquitetura de MLP e o mesmo protocolo temporal:
+
+- **Cenário A:** carga instantânea `P(t)`;
+- **Cenário B:** carga instantânea + memória e trajetória operacional.
+
+A divisão temporal permanece cronológica:
+
+- treino: janeiro a setembro;
+- validação: outubro;
+- teste: novembro e dezembro.
+
+As métricas principais são **MAE, RMSE e R²**, calculadas no conjunto de teste após a conversão das previsões para a unidade física original.
+
+O notebook está disponível em:
+
+- [`notebooks/03A_modelagem_preditiva_co2.ipynb`](notebooks/03A_modelagem_preditiva_co2.ipynb)
 
 ## Qualidade dos dados
 
