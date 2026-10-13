@@ -65,6 +65,8 @@ Os arquivos brutos e intermediários de grande volume não são versionados. O c
 
 ## Seleção da unidade de estudo
 
+> Caracterização técnica detalhada da unidade: [relatorio_caracterizacao_tecnica_iatan_unit2.md](outputs/reports/relatorio_caracterizacao_tecnica_iatan_unit2.md)
+
 A seleção partiu de uma população ampla de unidades termelétricas a carvão e aplicou critérios sucessivos de elegibilidade estrutural, disponibilidade de dados, cobertura de monitoramento, qualidade da série horária e comportamento operacional.
 
 A unidade selecionada foi:
