@@ -20,6 +20,7 @@ https://youtu.be/EUEqmm9nRHQ
 | 03A.01 | [03A.01_modelagem_preditiva_co2.ipynb](notebooks/03A.01_modelagem_preditiva_co2.ipynb) | Enriquecimento temporal da trajetória | [Abrir no Colab](https://colab.research.google.com/drive/1DVjl1v-wgQgWWtIyfE_bkCAdiVVjqJuW) |
 | 03A.02 | [03A.02_comparacao_modelos_gradient_boosting.ipynb](notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb) | Comparação MLP x XGBoost e validação temporal | [Abrir no Colab](https://colab.research.google.com/drive/1BRbZkilK4omkxV7QjMbx3uPYkI7acsNY) |
 | 03A.03 | [03A.03_otimizacao_pareada_xgboost.ipynb](notebooks/03A.03_otimizacao_pareada_xgboost.ipynb) | Busca pareada A x B e valor incremental da trajetória | [Abrir no Colab](https://colab.research.google.com/drive/1wbDqQxBoOi4qURULPh9EFTnNXpFUhgYj) |
+| 03A.04 | [03A.04_volume_dados_generalizacao_temporal_iatan.ipynb](notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb) | Ampliação do histórico e generalização temporal do Cenário A | [Abrir no Colab](https://colab.research.google.com/drive/1AvnuJ-wPYravlkuZ1C0_-TWD80VWrz4m) |
 
 ## Executar o projeto
 
@@ -285,46 +286,61 @@ A conclusão atual é:
 
 O comportamento em rampas intensas permanece como hipótese exploratória.
 
-## Decisão metodológica atual
+## Notebook 03A.04: histórico ampliado e generalização temporal
 
-O A-XGBoost do Notebook 03A.02 permanece como **modelo de referência**, por apresentar o melhor desempenho absoluto observado até aqui com apenas uma feature.
+O Notebook 03A.04 ampliou a série da Iatan Unit 2 e avaliou o valor preditivo do histórico para o **Cenário A**, definido por:
 
-Ele **não é considerado modelo final da Iatan**.
+`CO₂(t) = f(P(t))`
 
-Antes de qualquer generalização entre termelétricas, será investigada a generalização temporal intraplanta.
+A delimitação temporal adotada foi:
 
-As questões seguintes são:
+- **2010:** período parcial de commissioning, excluído da amostra principal;
+- **2011–2022:** histórico operacional de referência;
+- **2023–2024:** regime operacional distinto, preservado para análises específicas, mas excluído da amostra principal;
+- **2025:** período futuro de avaliação.
 
-1. mais anos de dados reduzem o erro?;
-2. qual volume histórico é suficiente para estabilizar o desempenho?;
-3. o modelo consegue prever um período futuro completamente não observado?;
-4. o desempenho é estável entre diferentes anos?;
-5. existe drift na relação carga e CO₂?;
-6. a trajetória continua apresentando pequeno ganho incremental com maior histórico?;
-7. em quais regimes o modelo apresenta maiores erros?;
-8. é necessário retreinamento periódico?
+A decisão sobre 2023 e 2024 foi baseada em indicadores operacionais antes da comparação preditiva. O detalhamento está em [03A04_delimitacao_amostra_historica.md](outputs/reports/03A04_delimitacao_amostra_historica.md).
 
-## Próximo experimento
+### Generalização 2011–2022 para 2025
 
-Notebook planejado:
+Treinado exclusivamente com **83.832 observações de 2011 a 2022**, o XGBoost do Cenário A foi avaliado nas **6.249 horas operacionais válidas de 2025**.
 
-`03A.04_volume_dados_generalizacao_temporal_iatan.ipynb`
+| Métrica | Resultado |
+|---|---:|
+| MAE | 50,2740 |
+| RMSE | 68,4650 |
+| R² | 0,8894 |
+| NMAE | 8,65% |
+| Bias | -33,9686 |
 
-Pergunta central:
+O resultado mostra capacidade relevante de transferência temporal, embora com superestimação média e degradação localizada em determinados meses e faixas de carga.
 
-> **A ampliação do histórico de treinamento melhora de forma consistente a capacidade de prever emissões futuras de CO₂ da Iatan Unit 2?**
+### Valor incremental do histórico
 
-A estratégia prevista inclui:
+Para verificar se o processamento do histórico acrescenta informação mesmo quando dados recentes de 2025 já estão disponíveis, foi realizado um teste pareado em novembro e dezembro de 2025.
 
-- incorporação de anos adicionais;
-- janelas crescentes de treinamento;
-- curva de aprendizado temporal;
-- validação entre anos;
-- teste futuro completamente fora da amostra;
-- comparação entre modelo estático e atualização periódica;
-- análise de drift;
-- reavaliação de startups e rampas;
-- métricas absolutas e normalizadas de erro.
+| Modelo | MAE | RMSE | R² | NMAE |
+|---|---:|---:|---:|---:|
+| Jan–Out/2025 | 23,3470 | 28,5786 | 0,9802 | 3,97% |
+| 2011–2022 + Jan–Out/2025 | **20,2454** | **25,1240** | **0,9847** | **3,44%** |
+
+A inclusão do histórico reduziu o MAE em **13,28%** e o RMSE em **12,09%**. O modelo com histórico apresentou menor erro absoluto em **65,30%** das horas do teste.
+
+Assim, o Notebook 03A.04 responde positivamente à questão:
+
+> **O processamento do histórico de 2011 a 2022 acrescenta valor preditivo ao Cenário A?**
+
+**Sim.**
+
+O relatório consolidado está em [03A04_relatorio_valor_preditivo_historico.md](outputs/reports/03A04_relatorio_valor_preditivo_historico.md).
+
+## Próxima etapa
+
+Nos experimentos anteriores com uma base temporal mais restrita, as variáveis de trajetória operacional não apresentaram ganho global robusto. Como o histórico ampliado aumentou substancialmente a quantidade e a diversidade das condições operacionais disponíveis para treinamento, a próxima etapa será conduzida em um novo notebook e responderá:
+
+> **Com histórico ampliado, a inclusão de variáveis de trajetória operacional melhora a previsão de CO₂ em relação ao uso exclusivo da carga instantânea?**
+
+A comparação será feita entre o Cenário A e o Cenário B sob o mesmo protocolo temporal.
 
 ## Artefatos gerados
 
@@ -347,7 +363,8 @@ co2-cems-thermal-modeling/
 │   ├── 03A_modelagem_preditiva_co2.ipynb
 │   ├── 03A.01_modelagem_preditiva_co2.ipynb
 │   ├── 03A.02_comparacao_modelos_gradient_boosting.ipynb
-│   └── 03A.03_otimizacao_pareada_xgboost.ipynb
+│   ├── 03A.03_otimizacao_pareada_xgboost.ipynb
+│   └── 03A.04_volume_dados_generalizacao_temporal_iatan.ipynb
 ├── data/
 │   ├── raw/
 │   ├── interim/
