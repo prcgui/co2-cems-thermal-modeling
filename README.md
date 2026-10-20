@@ -21,6 +21,7 @@ https://youtu.be/EUEqmm9nRHQ
 | 03A.02 | [03A.02_comparacao_modelos_gradient_boosting.ipynb](notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb) | Comparação MLP x XGBoost e validação temporal | [Abrir no Colab](https://colab.research.google.com/drive/1BRbZkilK4omkxV7QjMbx3uPYkI7acsNY) |
 | 03A.03 | [03A.03_otimizacao_pareada_xgboost.ipynb](notebooks/03A.03_otimizacao_pareada_xgboost.ipynb) | Busca pareada A x B e valor incremental da trajetória | [Abrir no Colab](https://colab.research.google.com/drive/1wbDqQxBoOi4qURULPh9EFTnNXpFUhgYj) |
 | 03A.04 | [03A.04_volume_dados_generalizacao_temporal_iatan.ipynb](notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb) | Ampliação do histórico e generalização temporal do Cenário A | [Abrir no Colab](https://colab.research.google.com/drive/1AvnuJ-wPYravlkuZ1C0_-TWD80VWrz4m) |
+| 03A.05 | [03A.05_trajetoria_operacional_historico_ampliado.ipynb](notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb) | Comparação A × B com histórico ampliado e análise por regimes operacionais | [Abrir no Colab](https://colab.research.google.com/drive/1e3QA1-eq5hdaynapAQqBNFdqBlW4grJY) |
 
 ## Executar o projeto
 
@@ -52,9 +53,7 @@ A questão que orientou a primeira sequência de experimentos foi:
 
 > **Em que medida a inclusão de informações sobre estados, memória e trajetória operacional melhora a estimação das emissões horárias de CO₂ em relação ao uso apenas da carga instantânea?**
 
-A etapa atual avançou além da preparação da base e já inclui modelagem por MLP e XGBoost, validação temporal, busca de hiperparâmetros e diagnóstico por contexto operacional.
-
-Nenhum modelo obtido até o Notebook 03A.03 é tratado como modelo final da Iatan.
+A sequência experimental do **Trabalho 2** está concluída no **Notebook 03A.05**. Ela compreende MLP, XGBoost, validação temporal, busca pareada de hiperparâmetros, avaliação do volume histórico e análise do ganho das informações de trajetória operacional por regime. Não se declara um modelo universalmente ótimo.
 
 ## Fonte dos dados
 
@@ -347,13 +346,41 @@ Para facilitar a navegação pelos resultados desta etapa:
 - [Figura de comparação dos erros](outputs/figures/03A04_comparacao_2025_vs_historico_2025_erros.png)
 - [Séries observada e previstas](outputs/figures/03A04_comparacao_2025_vs_historico_2025_series.png)
 
-## Próxima etapa
+## Notebook 03A.05: trajetória operacional com histórico ampliado
 
-Nos experimentos anteriores com uma base temporal mais restrita, as variáveis de trajetória operacional não apresentaram ganho global robusto. Como o histórico ampliado aumentou substancialmente a quantidade e a diversidade das condições operacionais disponíveis para treinamento, a próxima etapa será conduzida em um novo notebook e responderá:
+O experimento final do Trabalho 2 retomou a comparação entre os modelos XGBoost com **carga instantânea (A)** e com **carga e trajetória operacional (B)**, sob as mesmas observações e o histórico de **2011–2022 + janeiro a outubro de 2025**. A avaliação temporal utilizou novembro e dezembro de 2025 como período de comparação histórica, previamente examinado em outros experimentos do projeto.
 
-> **Com histórico ampliado, a inclusão de variáveis de trajetória operacional melhora a previsão de CO₂ em relação ao uso exclusivo da carga instantânea?**
+| Indicador | Cenário A | Cenário B |
+|---|---:|---:|
+| MAE (short tons de CO₂ por registro horário) | **20,1514** | 21,1720 |
+| NMAE | **3,4240%** | 3,5974% |
+| Variação global do MAE de B em relação a A | Referência | **−5,06%** |
 
-A comparação será feita entre o Cenário A e o Cenário B sob o mesmo protocolo temporal.
+Embora B tenha apresentado MAE global maior, houve **redução de 22,90% do MAE nas rampas intensas** e melhora agregada nas primeiras seis horas após startup. Nas demais horas, que predominam no teste, o MAE de B foi aproximadamente **16,03% maior**.
+
+O resultado deve ser interpretado como evidência de **valor preditivo localizado da trajetória operacional**, e não como superioridade global ou prova causal de qualquer variável.
+
+**Artefatos do experimento:** [notebook 03A.05](notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb), [relatório completo](outputs/reports/03A05_relatorio_trajetoria_operacional_historico_ampliado.md), [métricas finais](outputs/tables/03A05_resultado_final_A_B.csv), [comparação por contexto](outputs/tables/03A05_comparacao_contextos_operacionais.csv), [síntese das evidências](outputs/tables/03A05_sintese_evidencias_trajetoria_historico.csv), [ganhos por regime](outputs/figures/03A05_ganho_trajetoria_por_contexto.png) e [distribuição dos ganhos horários](outputs/figures/03A05_distribuicao_ganho_horario_B_vs_A.png).
+
+## Trabalho 2: resposta à pergunta de pesquisa
+
+**Pergunta investigada:**
+
+> Em que medida a inclusão de informações sobre estados, memória e trajetória operacional melhora a estimação das emissões horárias de CO₂ em relação ao uso apenas da carga instantânea?
+
+**Resposta a partir dos experimentos 03A a 03A.05:** a inclusão indiscriminada de informações de trajetória **não produziu melhoria global consistente** quando comparada ao uso apenas da carga elétrica, especialmente nos modelos XGBoost e após a ampliação do histórico. Entretanto, essas informações **podem melhorar expressivamente as estimativas em condições dinâmicas específicas**, sobretudo em rampas intensas.
+
+Os resultados também demonstram que a **família de modelo** e a **composição temporal dos dados de treinamento** influenciam o desempenho: no 03A.04, a inclusão do histórico de 2011–2022 ao período recente reduziu o MAE do Cenário A em **13,28%** no teste comparativo de 2025. O desempenho varia entre períodos e regimes, e não foi estabelecida uma quantidade universal de histórico suficiente.
+
+**Conclusão do escopo da disciplina:** a pergunta de pesquisa do Trabalho 2 está respondida com as ressalvas acima. O experimento acadêmico se encerra no **Notebook 03A.05**. Não se assume a otimização adicional, nem a seleção definitiva de uma arquitetura como requisito deste trabalho.
+
+## Limitações e hipóteses para estudos futuros
+
+As evidências foram obtidas para a **Iatan Unit 2**, em condições operacionais e períodos determinados. O uso da carga da própria hora caracteriza uma **estimativa de emissões condicionada à carga conhecida**, não necessariamente uma previsão antecipada quando a carga futura é desconhecida. O período de novembro e dezembro de 2025 foi utilizado como comparação histórica, e não como teste completamente cego em relação ao conjunto da pesquisa.
+
+Como **possibilidades de investigação futura, sem constituírem compromissos de execução neste trabalho**, destacam-se: a suficiência e a recência do histórico para diferentes regimes; estratégias de predição específicas para condições transitórias; a estabilidade temporal em períodos com comportamento operacional distinto; e a aplicabilidade a outras unidades físicas.
+
+Essas hipóteses não alteram nem ampliam o escopo experimental já concluído.
 
 ## Artefatos gerados
 
@@ -377,7 +404,8 @@ co2-cems-thermal-modeling/
 │   ├── 03A.01_modelagem_preditiva_co2.ipynb
 │   ├── 03A.02_comparacao_modelos_gradient_boosting.ipynb
 │   ├── 03A.03_otimizacao_pareada_xgboost.ipynb
-│   └── 03A.04_volume_dados_generalizacao_temporal_iatan.ipynb
+│   ├── 03A.04_volume_dados_generalizacao_temporal_iatan.ipynb
+│   └── 03A.05_trajetoria_operacional_historico_ampliado.ipynb
 ├── data/
 │   ├── raw/
 │   ├── interim/
