@@ -10,18 +10,18 @@ A apresentação em vídeo do Trabalho 1 está disponível no YouTube:
 
 https://youtu.be/EUEqmm9nRHQ
 
-## Notebooks e Google Colab
+## Notebooks, procedimentos metodológicos e relatórios
 
-| Etapa | Notebook | Objetivo | Google Colab |
-|---|---|---|---|
-| 01 | [01_selecao_unidade_estudo.ipynb](notebooks/01_selecao_unidade_estudo.ipynb) | Seleção da unidade de estudo | [Abrir no Colab](https://colab.research.google.com/drive/11KpbBLZD8xo9CS2H6HKUW2Bd32spE-_S) |
-| 02 | [02_tratamento_dados.ipynb](notebooks/02_tratamento_dados.ipynb) | Auditoria, tratamento e preparação da base | [Abrir no Colab](https://colab.research.google.com/drive/1PtW8T_oWDK9-e9OHMkgngsNpGTJ87PyN) |
-| 03A | [03A_modelagem_preditiva_co2.ipynb](notebooks/03A_modelagem_preditiva_co2.ipynb) | Modelagem preditiva inicial | [Abrir no Colab](https://colab.research.google.com/drive/18alc2xYDM511l5pSXpIXXxkDFrSWAC8M) |
-| 03A.01 | [03A.01_modelagem_preditiva_co2.ipynb](notebooks/03A.01_modelagem_preditiva_co2.ipynb) | Enriquecimento temporal da trajetória | [Abrir no Colab](https://colab.research.google.com/drive/1DVjl1v-wgQgWWtIyfE_bkCAdiVVjqJuW) |
-| 03A.02 | [03A.02_comparacao_modelos_gradient_boosting.ipynb](notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb) | Comparação MLP x XGBoost e validação temporal | [Abrir no Colab](https://colab.research.google.com/drive/1BRbZkilK4omkxV7QjMbx3uPYkI7acsNY) |
-| 03A.03 | [03A.03_otimizacao_pareada_xgboost.ipynb](notebooks/03A.03_otimizacao_pareada_xgboost.ipynb) | Busca pareada A x B e valor incremental da trajetória | [Abrir no Colab](https://colab.research.google.com/drive/1wbDqQxBoOi4qURULPh9EFTnNXpFUhgYj) |
-| 03A.04 | [03A.04_volume_dados_generalizacao_temporal_iatan.ipynb](notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb) | Ampliação do histórico e generalização temporal do Cenário A | [Abrir no Colab](https://colab.research.google.com/drive/1AvnuJ-wPYravlkuZ1C0_-TWD80VWrz4m) |
-| 03A.05 | [03A.05_trajetoria_operacional_historico_ampliado.ipynb](notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb) | Comparação A × B com histórico ampliado e análise por regimes operacionais | [Abrir no Colab](https://colab.research.google.com/drive/1e3QA1-eq5hdaynapAQqBNFdqBlW4grJY) |
+| Etapa | Notebook | Objetivo | Procedimentos metodológicos | Relatório | Google Colab |
+|---|---|---|---|---|---|
+| 01 | [`01_selecao_unidade_estudo.ipynb`](notebooks/01_selecao_unidade_estudo.ipynb) | Seleção da unidade | Triagem sucessiva de elegibilidade; cobertura CEMS; caracterização operacional | [Abrir relatório](outputs/reports/relatorio_selecao_unidade.md) | [Abrir no Colab](https://colab.research.google.com/drive/11KpbBLZD8xo9CS2H6HKUW2Bd32spE-_S) |
+| 02 | [`02_tratamento_dados.ipynb`](notebooks/02_tratamento_dados.ipynb) | Auditoria e preparação | Auditoria temporal; faltantes estruturais; IQR; *feature engineering*; PCA exploratória; *temporal split*; Min–Max | [Abrir relatório](outputs/reports/relatorio_tratamento_dados.md) | [Abrir no Colab](https://colab.research.google.com/drive/1PtW8T_oWDK9-e9OHMkgngsNpGTJ87PyN) |
+| 03A | [`03A_modelagem_preditiva_co2.ipynb`](notebooks/03A_modelagem_preditiva_co2.ipynb) | MLP: carga versus trajetória | *Supervised regression*; MLP *feedforward*; Adam; MSE; *EarlyStopping*; *temporal holdout*; comparação A/B | [Abrir relatório](outputs/reports/relatorio_modelagem_preditiva_3A.md) | [Abrir no Colab](https://colab.research.google.com/drive/18alc2xYDM511l5pSXpIXXxkDFrSWAC8M) |
+| 03A.01 | [`03A.01_modelagem_preditiva_co2.ipynb`](notebooks/03A.01_modelagem_preditiva_co2.ipynb) | Enriquecimento temporal | *Lagged* e *rolling-window features*; prevenção de *look-ahead bias*; comparação controlada B/C; diagnóstico descritivo de *distribution shift* | [Abrir relatório](outputs/reports/relatorio_modelagem_preditiva_03A01.md) | [Abrir no Colab](https://colab.research.google.com/drive/1DVjl1v-wgQgWWtIyfE_bkCAdiVVjqJuW) |
+| 03A.02 | [`03A.02_comparacao_modelos_gradient_boosting.ipynb`](notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb) | MLP versus XGBoost | GBRT/XGBoost; *walk-forward* com janela expansiva (5 folds); *early stopping*; *sanity checks*; importância por *gain* | [Abrir relatório](outputs/reports/relatorio_modelagem_preditiva_03A02.md) | [Abrir no Colab](https://colab.research.google.com/drive/1BRbZkilK4omkxV7QjMbx3uPYkI7acsNY) |
+| 03A.03 | [`03A.03_otimizacao_pareada_xgboost.ipynb`](notebooks/03A.03_otimizacao_pareada_xgboost.ipynb) | Otimização pareada de XGBoost | *Random Search* (`ParameterSampler`); 30 configurações A/B × 5 folds; desenho pareado; *final refit*; sem *early stopping* na busca | [Abrir relatório](outputs/reports/relatorio_modelagem_preditiva_03A03.md) | [Abrir no Colab](https://colab.research.google.com/drive/1wbDqQxBoOi4qURULPh9EFTnNXpFUhgYj) |
+| 03A.04 | [`03A.04_volume_dados_generalizacao_temporal_iatan.ipynb`](notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb) | Histórico e generalização temporal | *Backtesting* com janelas de 1, 2, 3, 5 e 10 anos; validação entre anos; análise de *drift*; comparação pareada de histórico | [Abrir relatório](outputs/reports/03A04_relatorio_valor_preditivo_historico.md) | [Abrir no Colab](https://colab.research.google.com/drive/1AvnuJ-wPYravlkuZ1C0_-TWD80VWrz4m) |
+| 03A.05 | [`03A.05_trajetoria_operacional_historico_ampliado.ipynb`](notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb) | Trajetória com histórico ampliado | *Temporal feature engineering*; comparação pareada A/B em amostra comum; *early stopping*; *final refit*; análise estratificada de erros | [Abrir relatório](outputs/reports/03A05_relatorio_trajetoria_operacional_historico_ampliado.md) | [Abrir no Colab](https://colab.research.google.com/drive/1e3QA1-eq5hdaynapAQqBNFdqBlW4grJY) |
 
 ## Executar o projeto
 
@@ -209,6 +209,11 @@ Nos experimentos posteriores, novembro e dezembro passaram a ser tratados como *
 
 ## Notebook 03A: experimento inicial com MLP
 
+**Procedimentos metodológicos empregados.** Aprendizado supervisionado para regressão (*supervised regression*) com uma rede neural artificial *feedforward* do tipo **Multilayer Perceptron (MLP)**, composta por duas camadas ocultas densas (64 e 32 neurônios, ReLU) e saída linear. O treinamento utilizou **Mean Squared Error (MSE)**, retropropagação executada pelo TensorFlow/Keras e otimizador **Adam**, com **EarlyStopping** monitorando a validação e recuperação dos melhores pesos. A comparação A versus B seguiu um **desenho controlado de conjuntos de atributos** (*controlled feature-set comparison*), com normalização **Min–Max ajustada somente no treino** e **temporal holdout** cronológico (treino, validação e teste). A avaliação fora da amostra empregou **MAE, RMSE e R²**, complementados por erros estratificados em startups e rampas intensas (P90 calculado no treino). Essa etapa **não** empregou validação *walk-forward* nem busca de hiperparâmetros.
+
+**Documentação:** [Notebook 03A](notebooks/03A_modelagem_preditiva_co2.ipynb) · [Relatório metodológico e resultados 03A](outputs/reports/relatorio_modelagem_preditiva_3A.md).
+
+
 Foram comparados:
 
 - **Cenário A:** carga instantânea;
@@ -227,6 +232,11 @@ Nas primeiras seis horas após startup, a redução foi de aproximadamente **26,
 
 ## Notebook 03A.01: trajetória temporal enriquecida
 
+**Procedimentos metodológicos empregados.** **Engenharia de atributos temporais** (*temporal feature engineering*), com **variáveis defasadas** (*lagged features*, implementadas com `shift(n)`), **estatísticas de janelas móveis** (*rolling-window features*) e representação de direção, aceleração, startups e estados operacionais. O uso de `shift(1)` antes das janelas retrospectivas foi adotado para **prevenir *look-ahead bias***. Realizou-se **comparação controlada de atributos** (*controlled feature-set comparison*) entre B e C, mantendo a arquitetura MLP, Adam, MSE, *EarlyStopping* e a partição de **temporal holdout**; a equivalência completa das amostras entre notebooks não é presumida. A comparação incluiu **MAE, RMSE, R², viés e diagnósticos por contexto**, além de um diagnóstico **descritivo** de *distribution shift* e risco de extrapolação. Não se realizou teste formal de *concept drift* ou *covariate shift*.
+
+**Documentação:** [Notebook 03A.01](notebooks/03A.01_modelagem_preditiva_co2.ipynb) · [Relatório metodológico e resultados 03A.01](outputs/reports/relatorio_modelagem_preditiva_03A01.md).
+
+
 O Cenário C ampliou a representação temporal mantendo a mesma família MLP.
 
 Resultados principais:
@@ -239,6 +249,11 @@ Resultados principais:
 O aumento do número de variáveis temporais não produziu melhora global consistente.
 
 ## Notebook 03A.02: comparação com XGBoost
+
+**Procedimentos metodológicos empregados.** Substituição da família MLP por **Extreme Gradient Boosting (XGBoost)**, um conjunto sequencial de **árvores de regressão por *gradient boosting*** (*GBRT*), com comparação dos conjuntos de atributos A (1), B (7) e C (24). Aplicou-se **validação cruzada temporal *walk-forward* com janela de treinamento expansiva** (*expanding-window time-series cross-validation*) em **cinco folds cronológicos**, além de avaliação em *holdout* histórico de 2025. O **early stopping** selecionou a complexidade efetiva das árvores por validação; **não houve *Random Search* nesta etapa**. A comparação controlada **MLP versus XGBoost** separou o efeito da família de algoritmo do efeito dos atributos. Os **sanity checks** avaliaram a integridade das variáveis, o alinhamento das observações e a ausência de sobreposição temporal; calculou-se importância das variáveis por ***gain*** (não SHAP nem efeito causal).
+
+**Documentação:** [Notebook 03A.02](notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb) · [Relatório metodológico e resultados 03A.02](outputs/reports/relatorio_modelagem_preditiva_03A02.md).
+
 
 A família de modelo foi alterada para XGBoost e os Cenários A, B e C foram avaliados em cinco folds temporais progressivos.
 
@@ -268,6 +283,11 @@ Os sanity checks verificaram:
 - alinhamento das 1.144 observações usadas nas comparações.
 
 ## Notebook 03A.03: busca pareada A x B
+
+**Procedimentos metodológicos empregados.** **Busca aleatória de hiperparâmetros** (*Random Search*) com `ParameterSampler` e semente 42: **30 configurações candidatas**, aplicadas tanto ao Cenário A quanto ao B nos **mesmos cinco folds *walk-forward* com janela expansiva**, totalizando **300 ajustes**. O **desenho experimental pareado** (*paired experimental design*) manteve observações, configurações candidatas, folds e métrica primária de seleção (**MAE médio**) comparáveis, embora cada cenário pudesse selecionar uma configuração final diferente. Nesta busca, **`n_estimators` foi hiperparâmetro explícito, sem *early stopping***. Após a seleção, realizou-se **reajuste final** (*final refit*) no período de desenvolvimento e avaliação no *holdout* histórico de novembro e dezembro de 2025, com diagnóstico estratificado por startups e rampas intensas. O desenho não constitui teste formal de significância nem demonstra superioridade causal.
+
+**Documentação:** [Notebook 03A.03](notebooks/03A.03_otimizacao_pareada_xgboost.ipynb) · [Relatório metodológico e resultados 03A.03](outputs/reports/relatorio_modelagem_preditiva_03A03.md).
+
 
 Foram avaliadas **30 configurações** para cada cenário nos mesmos cinco folds, totalizando **300 ajustes**.
 
