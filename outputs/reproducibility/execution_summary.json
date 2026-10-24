@@ -1,6 +1,6 @@
 {
-  "started_at_utc": "2026-10-24T13:59:55.943550+00:00",
-  "runner_sha256": "5892aa692ef78318d1d496f7d22228170046ac095c43b2e9ce4613771dcf23f6",
+  "started_at_utc": "2026-10-24T14:07:28.871526+00:00",
+  "runner_sha256": "7c4dd37e2e571dd9a701cabd28bf93e0c7025e648644637d2f0eb1ee4c71f8d2",
   "scope": [
     "03A.04",
     "03A.05"
@@ -9,22 +9,22 @@
     {
       "notebook": "notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
       "code_source_sha256": "b1a753101a89ec27d70533b5d91893c335277cbe2200c6253d38dc9d6672f046",
-      "executed_notebook_sha256": "0ef9048bc8372286729e50c40e2514f7fdcce0f06cb5fa8bffca82dad2d26357",
-      "elapsed_seconds": 16.709,
+      "executed_notebook_sha256": "142a497ec2851b7f4a86611f17b085cd3ae9fea1cace4325f4a3be35048c6353",
+      "elapsed_seconds": 16.688,
       "executed_code_cells": 10,
       "completed": true
     },
     {
       "notebook": "notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb",
       "code_source_sha256": "a092059128595845d0a18dc42fa50a1043599e4e9674882eb14ec12724228ebc",
-      "executed_notebook_sha256": "70a0c6f9f99e41e9d596d1f5280be09a81c32835690479473e4bd973fc52488a",
-      "elapsed_seconds": 9.955,
+      "executed_notebook_sha256": "af816dec50a291f3beb991867acd96b57b31d032a4220baa2517ed09df3dc430",
+      "elapsed_seconds": 9.861,
       "executed_code_cells": 10,
       "completed": true
     }
   ],
   "completed": true,
-  "finished_at_utc": "2026-10-24T14:00:22.736376+00:00",
+  "finished_at_utc": "2026-10-24T14:07:55.552880+00:00",
   "reference_comparison_passed": true,
   "inputs_unchanged": true
 }

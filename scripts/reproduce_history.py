@@ -40,6 +40,19 @@ def write_json(path: Path, value) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False)+'\n')
 
 
+def clean_session_metadata(value) -> None:
+    """Remove inherited session identifiers, preserving code and result content."""
+    if isinstance(value, dict):
+        for key in list(value):
+            if key in {'executionInfo', 'base_uri', 'authorship_tag'}:
+                del value[key]
+            else:
+                clean_session_metadata(value[key])
+    elif isinstance(value, list):
+        for item in value:
+            clean_session_metadata(item)
+
+
 def environment() -> dict:
     return {
         'python': platform.python_version(),
@@ -111,9 +124,11 @@ def compare_references(root: Path, atol=1e-6, rtol=1e-8) -> dict:
 def run_notebook(root: Path, filename: str, runtime: Path, timeout: int) -> dict:
     path = root/'notebooks'/filename
     nb = nbformat.read(path, as_version=4)
+    clean_session_metadata(nb.metadata)
     code_source = '\n\n'.join(c.source for c in nb.cells if c.cell_type == 'code')
     source_digest = hashlib.sha256(code_source.encode()).hexdigest()
     for cell in nb.cells:
+        clean_session_metadata(cell.metadata)
         if cell.cell_type == 'code':
             cell.outputs = []
             cell.execution_count = None
@@ -151,6 +166,7 @@ def run_notebook(root: Path, filename: str, runtime: Path, timeout: int) -> dict
         'python_version': platform.python_version(),
         'code_source_sha256': source_digest,
         'command': 'python scripts/reproduce_history.py',
+        'session_metadata_cleanup': ['executionInfo', 'base_uri', 'authorship_tag'],
     }
     nbformat.write(nb, path)
     result = {'notebook': path.relative_to(root).as_posix(),
