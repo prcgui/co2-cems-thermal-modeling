@@ -1,0 +1,18 @@
+{
+  "notebook": "notebooks/01_selecao_unidade_estudo.ipynb",
+  "notebook_sha256": "a9243370804766c728a1cbe8a721ceea14dd75ce8d783d2f29af4584d25379d4",
+  "repository_commit": "ed9d409fbf7805e0bbc9fe1fa1ac944cc1e4c8f4",
+  "notes": [
+    {
+      "cell_index_zero_based": 12,
+      "source_line_one_based": 395,
+      "excerpt": "        \"CO2 Mass Measure Indicator\"\n        in g.columns\n        and operating_hours > 0\n    ):\n\n        indicator = (\n            g.loc[\n                on,\n                \"CO2 Mass Measure Indicator\"\n            ]\n            .astype(str)\n            .str.strip()\n            .str.lower()\n        )\n\n\n        measured_share = float(\n            indicator\n            .str.contains(\n                \"measured\",\n                na=False\n            )\n            .mean()\n        )\n\n    else:\n\n        measured_share = np.nan\n"
+    },
+    {
+      "cell_index_zero_based": 13,
+      "source_line_one_based": 375,
+      "excerpt": "        \"CO2 Mass Measure Indicator\"\n        in g.columns\n        and operating_hours > 0\n    ):\n\n        indicator = (\n            g.loc[\n                on,\n                \"CO2 Mass Measure Indicator\"\n            ]\n            .astype(str)\n            .str.strip()\n            .str.lower()\n        )\n\n\n        measured_share = float(\n            indicator\n            .str.contains(\n                \"measured\",\n                na=False\n            )\n            .mean()\n        )\n\n    else:\n\n        measured_share = np.nan\n"
+    }
+  ],
+  "interpretation": "The original measured_share contains the substring measured and includes Measured and Substitute. The historical audit reports exact labels separately and does not alter selection."
+}

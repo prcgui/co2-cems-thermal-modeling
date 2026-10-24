@@ -23,6 +23,10 @@ https://youtu.be/EUEqmm9nRHQ
 | 03A.04 | [`03A.04_volume_dados_generalizacao_temporal_iatan.ipynb`](notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb) | Histórico e generalização temporal | *Backtesting* com janelas de 1, 2, 3, 5 e 10 anos; validação entre anos; análise de *drift*; comparação pareada de histórico | [Abrir relatório](outputs/reports/03A04_relatorio_valor_preditivo_historico.md) | [Abrir no Colab](https://colab.research.google.com/drive/1AvnuJ-wPYravlkuZ1C0_-TWD80VWrz4m) |
 | 03A.05 | [`03A.05_trajetoria_operacional_historico_ampliado.ipynb`](notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb) | Trajetória com histórico ampliado | *Temporal feature engineering*; comparação pareada A/B em amostra comum; *early stopping*; *final refit*; análise estratificada de erros | [Abrir relatório](outputs/reports/03A05_relatorio_trajetoria_operacional_historico_ampliado.md) | [Abrir no Colab](https://colab.research.google.com/drive/1e3QA1-eq5hdaynapAQqBNFdqBlW4grJY) |
 
+## Reprodução e auditoria concluídas em 24/10/2026
+
+Os notebooks 03A.04 e 03A.05 foram executados integralmente após as correções de leitura e sintaxe. Os sete CSVs centrais coincidiram byte a byte com as referências históricas. O ambiente, os hashes e a auditoria de monitoramento de 2011 a 2025 estão em [Reprodução dos experimentos](reproducibility/README.md). Essa verificação abrange as duas etapas finais e preserva as limitações do delineamento descritas no artigo.
+
 ## Executar o projeto
 
 Os arquivos `.ipynb` são notebooks executáveis. No GitHub eles são exibidos de forma estática. Para executar as células, utilize os links do Google Colab acima.
@@ -325,7 +329,7 @@ A delimitação temporal adotada foi:
 - **2023–2024:** regime operacional distinto, preservado para análises específicas, mas excluído da amostra principal;
 - **2025:** período futuro de avaliação.
 
-A decisão sobre 2023 e 2024 foi baseada em indicadores operacionais antes da comparação preditiva. O detalhamento está em [03A04_delimitacao_amostra_historica.md](outputs/reports/03A04_delimitacao_amostra_historica.md).
+A delimitação de 2011 a 2022 foi exploratória e consolidada após os backtests, que incluíram avaliação em 2025. Os indicadores operacionais sustentam sua justificativa, sem caracterizar uma escolha independente dos resultados. O detalhamento está em [03A04_delimitacao_amostra_historica.md](outputs/reports/03A04_delimitacao_amostra_historica.md).
 
 ### Generalização 2011–2022 para 2025
 
