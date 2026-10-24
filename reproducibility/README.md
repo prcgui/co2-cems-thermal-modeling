@@ -64,3 +64,9 @@ O método CO2/CEM está documentado desde 1º de outubro de 2010, com cobertura 
 ## Limites preservados
 
 A reprodução resolve as falhas de execução e a rastreabilidade dos resultados históricos e finais. Permanecem características do delineamento: estudo de uma unidade, seleção retrospectiva, delimitação histórica exploratória, reutilização do teste durante o desenvolvimento, uma semente por configuração e ausência de intervalos de confiança que considerem dependência temporal. A conferência não transforma a análise descritiva em evidência causal nem demonstra generalização para outras plantas.
+
+## Atualização da documentação em 24 de outubro de 2026
+
+As oito versões documentadas dos notebooks incorporam referências e comentários metodológicos. A [matriz de fundamentação](../docs/fundamentacao_metodologica.md) explicita o alcance das fontes e as decisões do protocolo. Foram comparadas as árvores sintáticas das células Python antes e depois da atualização e as saídas armazenadas; ambas permaneceram iguais em cada repositório.
+
+Os hashes de código e de notebook presentes nos registros de execução anteriores identificam as versões efetivamente executadas naquela reprodução. A inclusão de comentários e células Markdown modifica o hash integral dos arquivos, sem modificar as instruções computacionais. A [verificação desta atualização documental](../outputs/reproducibility/documentation_update_2026-10-24.json) registra essa correspondência. Os registros anteriores de execução e os dados e resultados científicos foram preservados.
