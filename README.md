@@ -483,7 +483,7 @@ As técnicas citadas foram conferidas por confronto com as fontes, extração da
 
 ## Biblioteca de referências
 
-A documentação bibliográfica auditada está em [`references/`](references/README.md). O registro mestre [`source_registry.csv`](references/source_registry.csv) informa DOI/URL, status de acesso, condição de redistribuição e finalidade de cada uma das 27 fontes. PDFs públicos arquivados ficam em [`references/public_pdfs/`](references/public_pdfs/).
+A documentação bibliográfica auditada está em [`references/`](references/README.md). O registro mestre [`source_registry.csv`](references/source_registry.csv) informa DOI/URL, status de acesso, condição de redistribuição e finalidade de cada uma das 36 fontes. PDFs públicos arquivados ficam em [`references/public_pdfs/`](references/public_pdfs/).
 
 
 ### Atualização bibliográfica de 29/10/2026
