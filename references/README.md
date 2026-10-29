@@ -15,3 +15,16 @@ O PDF `10_artigos_emissoes_co2_termeletricas.pdf` é um resumo secundário e nã
 ## Melhoria metodológica incorporada
 
 Potts et al. (2026) motivou a inclusão, no Notebook 03A.05, de um diagnóstico simples de cobertura operacional baseado em atributos do teste fora dos mínimos e máximos observados no treinamento. A célula não reproduz o framework completo do preprint e está marcada como não executada nesta revisão; portanto, não altera os resultados numéricos já apresentados.
+
+
+## Busca expandida de 29/10/2026
+
+A nova triagem avaliou 65 PDFs, correspondentes a 58 documentos únicos após deduplicação. Cinco fontes acrescentaram contribuição direta ao estudo e foram incorporadas ao registro mestre e ao Notebook 03A.05:
+
+1. Zhang et al. (2026): redundância/multicolinearidade e seleção híbrida XGBoost + Pearson. Aplicação no projeto: auditoria diagnóstica das sete features de B, sem poda retrospectiva ou novo ajuste.
+2. Jin et al. (2026): transferência explicável entre usinas. Aplicação: delimitação da generalização externa como problema distinto da generalização temporal intraplanta.
+3. Huang et al. (2027): previsão sob histórico reduzido, mudança de regime e calibração de incerteza. Aplicação: interpretação não monotônica do valor do histórico e extensão futura para incerteza.
+4. Liu et al. (2025): regulação profunda de carga e intensidade de carbono. Aplicação: suporte físico à leitura estratificada por regime.
+5. Lu, Tang e Duan (2024): soft measurement de vazão de gases sob operação dinâmica. Aplicação: explicitação de limitação metrológica possível em sistemas CEMS.
+
+Os PDFs recebidos permanecem no acervo privado do projeto quando sua licença de redistribuição pública não está confirmada. O GitHub registra metadados, DOI/URL e finalidade de uso; apenas arquivos com redistribuição permitida devem ser copiados para `public_pdfs/`.
