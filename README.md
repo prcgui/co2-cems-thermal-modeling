@@ -483,4 +483,9 @@ As técnicas citadas foram conferidas por confronto com as fontes, extração da
 
 ## Biblioteca de referências
 
-A documentação bibliográfica auditada está em [`references/`](references/README.md). O registro mestre [`source_registry.csv`](references/source_registry.csv) informa DOI/URL, status de acesso, condição de redistribuição e finalidade de cada uma das 22 fontes. PDFs públicos arquivados ficam em [`references/public_pdfs/`](references/public_pdfs/).
+A documentação bibliográfica auditada está em [`references/`](references/README.md). O registro mestre [`source_registry.csv`](references/source_registry.csv) informa DOI/URL, status de acesso, condição de redistribuição e finalidade de cada uma das 27 fontes. PDFs públicos arquivados ficam em [`references/public_pdfs/`](references/public_pdfs/).
+
+
+### Atualização bibliográfica de 29/10/2026
+
+A busca ampliada acrescentou cinco fontes metodologicamente relevantes. A principal alteração executável foi uma auditoria diagnóstica de redundância das features do Cenário B no Notebook 03A.05, baseada na motivação de Zhang et al. (2026), sem remoção de atributos nem novo treinamento. As demais fontes reforçam a interpretação do valor não monotônico do histórico, a análise por regime operacional, os limites de transferência entre plantas e as limitações metrológicas do monitoramento.
