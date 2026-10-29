@@ -1,6 +1,6 @@
 # Biblioteca de referências da versão revisada em 29/10/2026
 
-Este diretório acompanha a versão atual do artigo e contém o registro mestre das **31 fontes efetivamente citadas**.
+Este diretório acompanha a versão atual do artigo e contém o registro mestre das **36 fontes efetivamente citadas**.
 
 As referências fornecidas pelo usuário foram conferidas no texto original. Quando uma fonte nova cobria de forma mais direta a mesma afirmação de uma referência temática anterior, a nova fonte foi priorizada. Por esse motivo, F. Liu e Li (2025), Tu et al. (2024) e Zhou et al. (2023) deixaram de integrar a bibliografia final do artigo.
 
@@ -12,10 +12,11 @@ O PDF `10_artigos_emissoes_co2_termeletricas.pdf` é um resumo secundário e nã
 - `private_library/`: PDFs fornecidos pelo usuário, preservados no Google Drive privado.
 - GitHub público: mantém o registro e somente PDFs cuja redistribuição pública seja apropriada.
 
-## Melhoria metodológica incorporada
+## Melhorias metodológicas incorporadas
 
-Potts et al. (2026) motivou a inclusão, no Notebook 03A.05, de um diagnóstico simples de cobertura operacional baseado em atributos do teste fora dos mínimos e máximos observados no treinamento. A célula não reproduz o framework completo do preprint e está marcada como não executada nesta revisão; portanto, não altera os resultados numéricos já apresentados.
+Potts et al. (2026) motivou um diagnóstico de cobertura operacional baseado em atributos do teste fora das faixas observadas no treinamento. A busca expandida acrescentou uma segunda melhoria executável no Notebook 03A.05: uma auditoria diagnóstica de redundância das sete features de B, motivada por Zhang et al. (2026), com correlação de Pearson e verificação das identidades algébricas entre carga, defasagem e variação.
 
+Essas rotinas são diagnósticas. Não removem atributos, não reabrem a seleção de hiperparâmetros e não alteram retrospectivamente os resultados do teste.
 
 ## Busca expandida de 29/10/2026
 
