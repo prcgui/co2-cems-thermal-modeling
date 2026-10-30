@@ -483,7 +483,7 @@ As técnicas citadas foram conferidas por confronto com as fontes, extração da
 
 ## Biblioteca de referências
 
-A documentação bibliográfica auditada está em [`references/`](references/README.md). O registro mestre [`source_registry.csv`](references/source_registry.csv) informa DOI/URL, status de acesso, condição de redistribuição e finalidade de cada uma das 36 fontes. PDFs públicos arquivados ficam em [`references/public_pdfs/`](references/public_pdfs/).
+A documentação bibliográfica auditada está em [`references/`](references/README.md). O registro mestre [`source_registry.csv`](references/source_registry.csv) informa DOI/URL, status de acesso, condição de redistribuição e finalidade das fontes do registro mestre. PDFs públicos arquivados ficam em [`references/public_pdfs/`](references/public_pdfs/).
 
 
 ### Atualização bibliográfica de 29/10/2026
@@ -507,3 +507,11 @@ Os resultados principais mantêm os ganhos descritivos já existentes de 13,28% 
 Os PDFs privados e os dados volumosos permanecem no Drive do projeto. O índice identifica as versões e o conteúdo por SHA-256; links históricos continuam representando suas versões preservadas.
 
 O [registro de sincronização](outputs/auditoria_consolidada_2026-10-29/sincronizacao_destinos.json) distingue a publicação no GitHub do envio ao Drive. Em 30/10/2026, o Drive foi atualizado: 303 de 303 itens do pacote concluídos, com 36 PDFs na biblioteca de referências e confirmação da identidade do artigo por download. [Pasta do projeto](https://drive.google.com/drive/folders/1ONZBhbSfVpuN9TNTstsAmCQSZBZKv0l9) e [PDFs das referências](https://drive.google.com/drive/folders/1bZn3RDuNZvBC2fsaU_hivr_rvWdd9MO3).
+
+
+## Revisão dos materiais da disciplina em 30/10/2026
+
+A avaliação tem destino exclusivo no projeto de Modelagem Matemática com IA, com experimentos encerrados em 03A.05, 03A.05A, 03A.05B e 03A.05C. Foram produzidos um [parecer de melhorias documentais](docs/parecer_material_disciplina_modmat_2026-10-30.pdf), sua [versão em texto](docs/parecer_material_disciplina_modmat_2026-10-30.md) e um [mapa de perguntas, protocolos e evidências](docs/mapa_experimentos_concluidos.md). Os códigos, previsões, modelos, métricas e artigo principal foram preservados. Nove PDFs e uma planilha de apoio foram selecionados para o acervo privado; o [índice](references/metadata/material_disciplina_modmat_2026-10-30.csv) separa fontes usadas no parecer e consultas complementares. Nenhuma dessas entradas foi acrescentada automaticamente à bibliografia do artigo.
+
+
+A matriz de [16 contribuições](docs/matriz_contribuicoes_modmat_2026-10-30.csv) relaciona fontes a notebooks e células; o [inventário dos 84 materiais](docs/inventario_material_examinado_2026-10-30.csv) registra o exame efetivo e seus limites. Foram repetidas as 376 verificações de modelos e previsões e aprovadas mais 38 verificações de integridade e apresentação. As [duas figuras e seus registros](outputs/revisao_material_2026-10-30/) reapresentam resultados salvos de 5B e 5C. O [script de geração](scripts/gerar_figuras_complementos.py) não treina modelos nem reamostra perdas.

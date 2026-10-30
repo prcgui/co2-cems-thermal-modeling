@@ -35,3 +35,8 @@ Os PDFs recebidos permanecem no acervo privado do projeto quando sua licença de
 A ablação 03A.05A, a sensibilidade temporal 03A.05B e a comparação de cinco sementes 03A.05C estão executadas e conferidas. Diebold e Mariano (1994), Grinsztajn et al. (2022), Si et al. (2019) e Künsch (1989) integram a fundamentação complementar, com as adaptações descritas no artigo e nos notebooks. Os resultados não demonstram ganho global consistente da remoção de atributos.
 
 O [catálogo atualizado](metadata/source_registry.csv) e o [índice dos PDFs](metadata/pdfs_referencias_utilizadas.csv) identificam fontes, versões e SHA-256. As cópias integrais destinadas ao Drive usam títulos nos nomes dos arquivos. A biblioteca pública conserva sua política de redistribuição.
+
+
+## Materiais da disciplina selecionados em 30/10/2026
+
+O [catálogo separado](metadata/material_disciplina_modmat_2026-10-30.csv) registra nove PDFs e uma planilha úteis à documentação de Modelagem Matemática com IA. O [parecer](../docs/parecer_material_disciplina_modmat_2026-10-30.md) distingue fontes aplicadas ao mapa documental de consultas condicionais. A bibliografia do artigo permanece com suas 40 referências. As cópias integrais estão no acervo privado `references/material_disciplina_modmat_2026-10-30/`; não foram incluídas neste repositório público.
