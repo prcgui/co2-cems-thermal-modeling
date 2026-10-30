@@ -1,6 +1,6 @@
 # Biblioteca de referências da versão revisada em 29/10/2026
 
-Este diretório acompanha a versão atual do artigo e contém o registro mestre das **36 fontes efetivamente citadas**.
+Este diretório acompanha a versão atual do artigo e contém o registro das **40 referências do artigo**, complementado pelas fontes específicas dos notebooks.
 
 As referências fornecidas pelo usuário foram conferidas no texto original. Quando uma fonte nova cobria de forma mais direta a mesma afirmação de uma referência temática anterior, a nova fonte foi priorizada. Por esse motivo, F. Liu e Li (2025), Tu et al. (2024) e Zhou et al. (2023) deixaram de integrar a bibliografia final do artigo.
 
@@ -29,3 +29,9 @@ A nova triagem avaliou 65 PDFs, correspondentes a 58 documentos únicos após de
 5. Lu, Tang e Duan (2024): soft measurement de vazão de gases sob operação dinâmica. Aplicação: explicitação de limitação metrológica possível em sistemas CEMS.
 
 Os PDFs recebidos permanecem no acervo privado do projeto quando sua licença de redistribuição pública não está confirmada. O GitHub registra metadados, DOI/URL e finalidade de uso; apenas arquivos com redistribuição permitida devem ser copiados para `public_pdfs/`.
+
+## Consolidação dos experimentos executados
+
+A ablação 03A.05A, a sensibilidade temporal 03A.05B e a comparação de cinco sementes 03A.05C estão executadas e conferidas. Diebold e Mariano (1994), Grinsztajn et al. (2022), Si et al. (2019) e Künsch (1989) integram a fundamentação complementar, com as adaptações descritas no artigo e nos notebooks. Os resultados não demonstram ganho global consistente da remoção de atributos.
+
+O [catálogo atualizado](metadata/source_registry.csv) e o [índice dos PDFs](metadata/pdfs_referencias_utilizadas.csv) identificam fontes, versões e SHA-256. As cópias integrais destinadas ao Drive usam títulos nos nomes dos arquivos. A biblioteca pública conserva sua política de redistribuição.
