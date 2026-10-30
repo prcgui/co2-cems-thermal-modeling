@@ -1,0 +1,74 @@
+{
+  "artigo_antes_sha256": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372",
+  "artigo_depois_sha256": "afb91b79171e2632e621dc3261f2132c12e57ce81458d4fa821ba1598bd0f603",
+  "tabelas_preservadas": 29,
+  "equacoes_preservadas": 7,
+  "figuras_antes": 1,
+  "figuras_depois": 3,
+  "referencias_antes": 40,
+  "referencias_depois": 41,
+  "alteracoes_paragrafos": [
+    {
+      "paragrafo_original": 33,
+      "antes": "A comparação utilizou três conjuntos de entrada: A contém apenas a carga contemporânea; B acrescenta trajetória e memória operacional, reunindo os sete atributos da Tabela 2; C amplia essa representação para 24 atributos, descritos no Apêndice A. Esses conjuntos permitem examinar o valor preditivo das informações adicionais em relação à carga atual.",
+      "depois": "A comparação utilizou três conjuntos de entrada: A contém apenas a carga contemporânea; B acrescenta trajetória e memória operacional, reunindo os sete atributos da Tabela 2; C amplia essa representação para 24 atributos, descritos no Apêndice A. Esses conjuntos permitem examinar o valor preditivo das informações adicionais em relação à carga atual. O conhecimento da operação orientou a escolha e a construção dos atributos. Os estimadores foram ajustados aos dados, sem imposição de equações físicas na função de perda."
+    },
+    {
+      "paragrafo_original": 82,
+      "antes": "A análise complementar de calendário encontrou, para a redução média do erro absoluto de B frente a A nas rampas, 5,51 short tons por registro, com limites de reamostragem positivos nos três comprimentos de bloco. Na comparação global, a diferença foi −1,02, e todos os limites incluíram zero. Esses resultados caracterizam a sensibilidade das previsões já ajustadas; não transformam o teste reutilizado em validação confirmatória. A ablação e suas limitações constam no Apêndice D.",
+      "depois": "A análise complementar de calendário encontrou, para a redução média do erro absoluto de B frente a A nas rampas, 5,51 short tons por registro, com limites de reamostragem positivos nos três comprimentos de bloco. Na comparação global, a diferença foi −1,02, e todos os limites incluíram zero. Esses resultados caracterizam a sensibilidade das previsões já ajustadas; não transformam o teste reutilizado em validação confirmatória. A Figura D1 apresenta essa sensibilidade lado a lado nos contextos global e de rampas. A ablação e suas limitações constam no Apêndice D."
+    },
+    {
+      "paragrafo_original": 83,
+      "antes": "Na comparação complementar com cinco sementes, o XGBoost apresentou menor MAE de teste que a MLP nos cenários A e B em todas as sementes. As médias e os desvios padrão entre sementes foram 20,45 ± 0,02 e 21,22 ± 0,62 para XGBoost A e B; para MLP A e B, 57,28 ± 1,25 e 56,38 ± 1,82. A trajetória reduziu o MAE em três das cinco sementes da MLP e em uma das cinco do XGBoost. Esses resultados descrevem o novo protocolo sem reajuste com outubro e não substituem as comparações anteriores. Na validação, a ordenação entre famílias foi inversa, com menor MAE da MLP; os valores completos estão na Tabela D4.",
+      "depois": "Na comparação complementar com cinco sementes, o XGBoost apresentou menor MAE de teste que a MLP nos cenários A e B em todas as sementes. As médias e os desvios padrão entre sementes foram 20,45 ± 0,02 e 21,22 ± 0,62 para XGBoost A e B; para MLP A e B, 57,28 ± 1,25 e 56,38 ± 1,82. A trajetória reduziu o MAE em três das cinco sementes da MLP e em uma das cinco do XGBoost. Esses resultados descrevem o novo protocolo sem reajuste com outubro e não substituem as comparações anteriores. Na validação, a ordenação entre famílias foi inversa, com menor MAE da MLP; a Figura D2 torna visível essa inversão nas mesmas sementes, e os valores completos estão na Tabela D4."
+    }
+  ],
+  "escopo_final": "03A.05C",
+  "novo_treinamento": false,
+  "paginas_renderizadas": 31,
+  "paginas_inspecionadas_visualmente": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "verificacao_visual": "Aprovada: legibilidade, figuras, notas, tabelas, equações e paginação conferidas em todas as páginas.",
+  "preservacao": {
+    "modmat": {
+      "arquivos_conferidos": 236,
+      "alteracoes": []
+    },
+    "ciencia_dados": {
+      "arquivos_conferidos": 360,
+      "alteracoes": []
+    }
+  }
+}

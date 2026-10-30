@@ -1,0 +1,1597 @@
+[
+  {
+    "arquivo": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+    "bytes": 390772,
+    "sha256": "afb91b79171e2632e621dc3261f2132c12e57ce81458d4fa821ba1598bd0f603"
+  },
+  {
+    "arquivo": "docs/fundamentacao_metodologica.md",
+    "bytes": 29115,
+    "sha256": "0fd8489f0eab599f15bd92cea497318a47555806c58c58491c49b8aaf068c7ea"
+  },
+  {
+    "arquivo": "docs/incorporacao_melhorias_artigo_2026-10-30.md",
+    "bytes": 3240,
+    "sha256": "7b3d1d888072b8b7b4edc430f8bf212723a7c4ed74d51a48439c6d4901bd96b5"
+  },
+  {
+    "arquivo": "docs/inventario_material_examinado_2026-10-30.csv",
+    "bytes": 32876,
+    "sha256": "7d0941ff7b0f1d560facf81e5831b73887fed01ebaa824e414c7e1f0848a25b8"
+  },
+  {
+    "arquivo": "docs/mapa_experimentos_concluidos.md",
+    "bytes": 4466,
+    "sha256": "d4ae184e5c4ee9a37e11d02c73654a97c9aebd74476d18ee6e4659dca4f46a07"
+  },
+  {
+    "arquivo": "docs/matriz_contribuicoes_modmat_2026-10-30.csv",
+    "bytes": 8997,
+    "sha256": "0736429c8287260db92832b55fe58a59aa0391b2873d7acf61003e29b017d8ce"
+  },
+  {
+    "arquivo": "docs/parecer_material_disciplina_modmat_2026-10-30.md",
+    "bytes": 24594,
+    "sha256": "e2e8f8ea7c478c8a46f3951cfef0062e4abcd3ca2c7cf509075f7133cfe08b01"
+  },
+  {
+    "arquivo": "docs/parecer_material_disciplina_modmat_2026-10-30.pdf",
+    "bytes": 329949,
+    "sha256": "cad63fe7105f0386bcbc1e406d17dc7a156656110491e7b944113e0b2500c62f"
+  },
+  {
+    "arquivo": "docs/sequencia_notebooks_e_celulas_2026-10-30.csv",
+    "bytes": 1948,
+    "sha256": "2cbe50e3949499beb2c037230dadd77a11967e33b548f50550fbe9091cf8d3b0"
+  },
+  {
+    "arquivo": "notebooks/01_selecao_unidade_estudo.ipynb",
+    "bytes": 1494967,
+    "sha256": "ce81acd2f6a6568c062c85a61e7531cda3776c335d179a28344786f80236f06e"
+  },
+  {
+    "arquivo": "notebooks/02_tratamento_dados.ipynb",
+    "bytes": 974064,
+    "sha256": "5ea49e2ef70acad08882541d8dfb66fea8c62abcc4e5533ccb9413addbca85e7"
+  },
+  {
+    "arquivo": "notebooks/03A.01_modelagem_preditiva_co2.ipynb",
+    "bytes": 553273,
+    "sha256": "17404c46e9ef542571d3ceee883bad640acb0cb14af06d0e0d7f2fba89131e02"
+  },
+  {
+    "arquivo": "notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb",
+    "bytes": 448363,
+    "sha256": "433626e998f7415fcabfdb574b51d0e520d12d1f0dbf93ad0c1044707541e3b8"
+  },
+  {
+    "arquivo": "notebooks/03A.03_otimizacao_pareada_xgboost.ipynb",
+    "bytes": 479640,
+    "sha256": "43194372bd40823430930e931fe8ec0d4ea0bb8aab19831e02dc29de70c838e8"
+  },
+  {
+    "arquivo": "notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+    "bytes": 1894655,
+    "sha256": "c527d8eb07d996389bc934b616b554612894910f4aaa2bd350a43decff00404e"
+  },
+  {
+    "arquivo": "notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+    "bytes": 1091553,
+    "sha256": "06e18b544b24477a0f7a5978a844c33915728ac784cd551938d4fa95c1cf561c"
+  },
+  {
+    "arquivo": "notebooks/03A_05A_ablacao_controlada_features_Colab.ipynb",
+    "bytes": 79703,
+    "sha256": "e4a23aebc93be95c765d1f6f9d455734b8456032bc0a8bc5fdf2b292216731a1"
+  },
+  {
+    "arquivo": "notebooks/03A_05B_incerteza_pareada_calendario.ipynb",
+    "bytes": 73060,
+    "sha256": "00bf619cd8d72f68150c350bad4db062c796056b0dcedfefb74a701dfd95eb83"
+  },
+  {
+    "arquivo": "notebooks/03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb",
+    "bytes": 54244,
+    "sha256": "db12b79a623293dfd505028e7c1e2d1ef07bc1eb840d26cb0a0bcf53edd73a29"
+  },
+  {
+    "arquivo": "notebooks/03A_modelagem_preditiva_co2.ipynb",
+    "bytes": 569761,
+    "sha256": "431dbee42644c45fa0a369b7e779642084ec1906198c753079e84d79c7d00630"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/03A04_03A05_antes_depois_detalhado.csv",
+    "bytes": 9149,
+    "sha256": "bfa8ea797c822bc60cdc1c8b81024bf661acff38fb1408bc4623a4f3ae95c93b"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/ablacao_metricas.csv",
+    "bytes": 5077,
+    "sha256": "a6a5cccb54179d6b355355f0df4d1a3f40fae31695603e10beaa3cffcdce486e"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/ablacao_previsoes.csv",
+    "bytes": 114220,
+    "sha256": "98b19c65244ec405681b228fa602684a0f59741a5fab701c3aee403972e99b5c"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/ablacao_previsoes.parquet",
+    "bytes": 52516,
+    "sha256": "f4aeee282d9859d3a9cdc90855f7e0469ad029ee8b227fe9a0ad8af086f021b8"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/ambiente_e_insumos.json",
+    "bytes": 1303,
+    "sha256": "fda9f34077caf5527528e988722f1aa7b613cc0937ddc0e1c5123a66d50abb06"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/B_completo.json",
+    "bytes": 1359459,
+    "sha256": "33ddcc5874f5e9117596605114d9799856d6212a2f3797792fa07dace6274706"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/B_sem_delta.json",
+    "bytes": 1370304,
+    "sha256": "20cb4169bd72251578926da685fc692f6a4067ee7fa35393725704a1fd8e463f"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/B_sem_delta_e_absdelta.json",
+    "bytes": 1366593,
+    "sha256": "add79cd4a149f8663f2d9673884128e67866d54c4652351b8691941f54ab5d52"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/B_sem_media3h.json",
+    "bytes": 1349892,
+    "sha256": "42fb932e0f6cd5df01e5596643fb74011d0c973f7e810dcf25051618b515480a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/baseline_reproduction.json",
+    "bytes": 158,
+    "sha256": "fe70f390cc0207427f64f2c057ca172f8727eef22df2e2e5620b4d2ab4b64085"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/correlacoes_treino.csv",
+    "bytes": 1123,
+    "sha256": "b7718e14f8bcb20b0150477c5fd49837e9cda71843f6fbca58e160803de501c2"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5A/protocolo_ablacao.json",
+    "bytes": 3901,
+    "sha256": "e1d58be30b2e3aa2e3e7048c7ede36ed3814d172da912ada8cc8110206941928"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5B/autocorrelacao_calendario.csv",
+    "bytes": 2466,
+    "sha256": "28248a7bb7491a5cf4a0e35b015ee2a2c33cb9ec9072e09fd89dfb6790bd9d20"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5B/contagens_blocos.csv",
+    "bytes": 26820,
+    "sha256": "56daa4d8d1685f31a658334632a33e1fc2cb0466ca7349e313e196416359bd26"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5B/metricas_contextos.csv",
+    "bytes": 2079,
+    "sha256": "f48dac1f0d4cdd05a0f560f3b64924eccce3600ddcc13296e111efd6db9d5781"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5B/protocolo.json",
+    "bytes": 1562,
+    "sha256": "554c4291d35ce74e52ef209ba000d02ba8b5c42abc9189c420be59cd722d125b"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5B/sensibilidade_blocos_calendario.csv",
+    "bytes": 17645,
+    "sha256": "2c87c6d868229fbad4ed28380a41129c51cd00fc2817553cd7bdc2c49e2612b2"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5B/sorteios_blocos.npz",
+    "bytes": 996377,
+    "sha256": "91e0150eaa6f41841c9004787762ec476548abf4e0115f71ecfc335166495549"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/CONCLUIDO.json",
+    "bytes": 2220,
+    "sha256": "e99ba0f9e52d89d0f7e28dd45a1ea36e728bcd28ec587e51f4b3ebabeaf83243"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/diferencas_familias_por_semente.csv",
+    "bytes": 654,
+    "sha256": "58aa50e5fe131d8fa990a8251205a3e84d212fc3e9dbab94ae229b28cc5c041c"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/metricas_e_tempos.csv",
+    "bytes": 6953,
+    "sha256": "22cd44111ce8e3bc073e080d136885cf7d0c8e03c788e43d1e1ab15f3d0b6a36"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/metricas_e_tempos_parciais.csv",
+    "bytes": 6953,
+    "sha256": "22cd44111ce8e3bc073e080d136885cf7d0c8e03c788e43d1e1ab15f3d0b6a36"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed42.keras",
+    "bytes": 52393,
+    "sha256": "c38e505160db7a18a5ae3a077cb7d0ba461131fe01b38fb32dbe9f46ddafc899"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed42_historico.csv",
+    "bytes": 1494,
+    "sha256": "7a440791e3cd506fee8c696092eb69ca7fd09fc694f84af823f51c00ffc04965"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed42_scalers.joblib",
+    "bytes": 1593,
+    "sha256": "68a7e13acbec7c90de04189e960289cd6042b1aa65bceba15f2b18324257484a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed43.keras",
+    "bytes": 52393,
+    "sha256": "ff3fe1df3767b478d76d161c18c984389c76048fd9534c2884875461948cc737"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed43_historico.csv",
+    "bytes": 2592,
+    "sha256": "42013df372159e4d8dcf043c8c3f2ba30765d8a0b5354d99a9476dc6b1d9b904"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed43_scalers.joblib",
+    "bytes": 1593,
+    "sha256": "68a7e13acbec7c90de04189e960289cd6042b1aa65bceba15f2b18324257484a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed44.keras",
+    "bytes": 52393,
+    "sha256": "5e66c3f413bc50919439c847f39ebd5330bd3db774ae7ad59cc423f893d10bd9"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed44_historico.csv",
+    "bytes": 1495,
+    "sha256": "c23d619350244d56fe949057d0fc0eb5fca9efa4ab66aebe19f248eaf360fec2"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed44_scalers.joblib",
+    "bytes": 1593,
+    "sha256": "68a7e13acbec7c90de04189e960289cd6042b1aa65bceba15f2b18324257484a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed45.keras",
+    "bytes": 52393,
+    "sha256": "2320868541a34069fa4b070ec7e13d132342934c9f3ec6901c70bc6d7ba0122a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed45_historico.csv",
+    "bytes": 2259,
+    "sha256": "6e91437532d30616f8606c8568213ff83dd3e17fe1c0aa10ffb86e56fabcf5fe"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed45_scalers.joblib",
+    "bytes": 1593,
+    "sha256": "68a7e13acbec7c90de04189e960289cd6042b1aa65bceba15f2b18324257484a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed46.keras",
+    "bytes": 52393,
+    "sha256": "d2b08b90adf673f72f3ad77f3184d22deceb9fd7fe2848597b19d18307ab44aa"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed46_historico.csv",
+    "bytes": 2208,
+    "sha256": "55b17a0009c74ce93e22054c05a887fc48db1a4861c9e9aeecad0e51788a1808"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_A_seed46_scalers.joblib",
+    "bytes": 1593,
+    "sha256": "68a7e13acbec7c90de04189e960289cd6042b1aa65bceba15f2b18324257484a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed42.keras",
+    "bytes": 57001,
+    "sha256": "008deb081d715c9c88bf7ffb8614c50c0087d35bb4b213d6ab44c638e3783c0e"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed42_historico.csv",
+    "bytes": 2868,
+    "sha256": "3eeeab077f0f13484a6d003464556a985bd4157672f1bfe195e3ea1d1b6cca79"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed42_scalers.joblib",
+    "bytes": 2082,
+    "sha256": "b6b36aa21bf8d6ff01c2e0f9dc80a5244e3c720cb578a5703d46d68073a1f980"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed43.keras",
+    "bytes": 57001,
+    "sha256": "eb358fb539a6d707b9c10b00a5144b697836ad4cc6b945d9d4b89ee50988de6d"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed43_historico.csv",
+    "bytes": 2537,
+    "sha256": "a4445eaa03713e981fc16e1a79e19e67d83cb85af4976f8bae7244b60976a967"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed43_scalers.joblib",
+    "bytes": 2082,
+    "sha256": "b6b36aa21bf8d6ff01c2e0f9dc80a5244e3c720cb578a5703d46d68073a1f980"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed44.keras",
+    "bytes": 57001,
+    "sha256": "ff02c48d24fc09c336717e7b33b6f7e7a6c271c23627176f8662e50b5d17cd6b"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed44_historico.csv",
+    "bytes": 2348,
+    "sha256": "debbda2ce9234dd2a940490ccdfd7cf2b74715bcec8c0bed7ffd815fee164a26"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed44_scalers.joblib",
+    "bytes": 2082,
+    "sha256": "b6b36aa21bf8d6ff01c2e0f9dc80a5244e3c720cb578a5703d46d68073a1f980"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed45.keras",
+    "bytes": 57001,
+    "sha256": "923d46db7bd530b30821e4c42208cbf2794a3b729c586dd749a6756b74d8000a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed45_historico.csv",
+    "bytes": 2728,
+    "sha256": "431e6fa58137442b88d080fdd7ecb10d4fc47dac485b7df3e1f1fc367d14ed8e"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed45_scalers.joblib",
+    "bytes": 2082,
+    "sha256": "b6b36aa21bf8d6ff01c2e0f9dc80a5244e3c720cb578a5703d46d68073a1f980"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed46.keras",
+    "bytes": 57001,
+    "sha256": "de4819bf092a9ef2fcdfe67114b51fd83ce95d2d4d706f26f3c05661a859c9b9"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed46_historico.csv",
+    "bytes": 2335,
+    "sha256": "2b7cf22cd5aa4dd11379910c0f41446641636e810d061e783849aeb81f54b762"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/MLP_B_seed46_scalers.joblib",
+    "bytes": 2082,
+    "sha256": "b6b36aa21bf8d6ff01c2e0f9dc80a5244e3c720cb578a5703d46d68073a1f980"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/previsoes_teste.parquet",
+    "bytes": 119970,
+    "sha256": "f179f3ab8d94c39db25e494343f8bed933f9648f891c983a79bf3bf1816bf161"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/protocolo_antes_do_treino.json",
+    "bytes": 2021,
+    "sha256": "6462ef9ceca4ac15606aef21c588affcc119f7c20a9156699e9299b9f8bb0a5e"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/resumo_sementes.csv",
+    "bytes": 1300,
+    "sha256": "67a5e485243b889b42b44b012521e55c71c58cefe7d86077fe39d300c81cc890"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed42.json",
+    "bytes": 952194,
+    "sha256": "9d7d6f1cbdf2e24be34edc186b744a6e90e3c64eb77e95843ea6e0ca7d5bcc68"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed42_historico.csv",
+    "bytes": 11945,
+    "sha256": "8416dd22926de56a01fb5be1c3a19349da4dbf3f9cb7e97526460c3283f8f047"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed43.json",
+    "bytes": 792227,
+    "sha256": "e5d6d0772efe6fbb83630767db38c23345763a2ec30342b33910692eaf4529a9"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed43_historico.csv",
+    "bytes": 9757,
+    "sha256": "904bc8ca83d75edd40b1bfa64fed2b00b749aa6fff1da4c1552e394ab1ee844b"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed44.json",
+    "bytes": 727079,
+    "sha256": "31aa7d96a12ba5f36bffe81fc8baa8a80cf40a6eecb7304ede952d42b0ad16b2"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed44_historico.csv",
+    "bytes": 8826,
+    "sha256": "274e322379194fd5b4aa56d6a742a78b376df2adb05806cb2023391b59a4e47a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed45.json",
+    "bytes": 874778,
+    "sha256": "fde6f29caebe692504a55879bb4723162b7d6e9c57f9f0cfb8fed95e94ef17a1"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed45_historico.csv",
+    "bytes": 10858,
+    "sha256": "797d7624ffe7c11fc8c370bd2efb3ea8d48be9cb6423447e2b2befd769567fbd"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed46.json",
+    "bytes": 884237,
+    "sha256": "e78059767c734de4ff74ccf7f2a84d272378aeecc96b50e5cc4cbeea70f214f3"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_A_seed46_historico.csv",
+    "bytes": 10972,
+    "sha256": "065328b46e3d312c2434f18fa1f7118363e81d56a3bdf3210561f129eb59dabe"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed42.json",
+    "bytes": 1453773,
+    "sha256": "1a953ec52f923f1bcfc9da6cfcfc51aeb86b13a4d492323da18b49039d76309c"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed42_historico.csv",
+    "bytes": 16796,
+    "sha256": "e84264be006e4fe5be0bba91911bc72043b054650bff1cb2ff9987d4fcaa1446"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed43.json",
+    "bytes": 1723212,
+    "sha256": "7664f34181308a27e803735f9c4cf0abb9b0a8f2789fb4b40b5c2d65d9b682e7"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed43_historico.csv",
+    "bytes": 20015,
+    "sha256": "3a359c5026b1ad7027214f629b053ac0f5f308207f94f9f70d2755c68614b51a"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed44.json",
+    "bytes": 1461252,
+    "sha256": "8d665acf4e418e397291da69eb2bf16908b1103fb4c9c2e21e4f098a8c5babcb"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed44_historico.csv",
+    "bytes": 16856,
+    "sha256": "6551b5dd5b42259ec89e78a119c6b5d115979a3cb6ddb7e847a0cfe97b0b272e"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed45.json",
+    "bytes": 2106194,
+    "sha256": "c7479635ba889276b27bdd6eaf0ff6f89a1862a4dd68088337b8a5720adcd012"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed45_historico.csv",
+    "bytes": 24778,
+    "sha256": "ae4f6f29836032613c928ecefd4c7849dd1df4f1a725152c1b26997e5ab6eb62"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed46.json",
+    "bytes": 1156585,
+    "sha256": "a5343dc66edccd43ea824ea01a957592870326e35f1f73313ac12f0da42c77fc"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/5C/XGBoost_B_seed46_historico.csv",
+    "bytes": 13275,
+    "sha256": "72e7a5e1a4d1b12119c82f2b6dde68279d1fe41d910e3b5f928c44c0592184b7"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/alteracoes_artigo.json",
+    "bytes": 18865,
+    "sha256": "2afbe59605fad1dc8f23b2264ef44dd820e54e66bdefee9a84814a8f103146ff"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/auditoria_execucoes.json",
+    "bytes": 65969,
+    "sha256": "a4ebc7e6a71f1ae905bf4969163672d81d2b54ccff2e2a7a17204fe90166c41f"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/auditoria_orcamento_original.csv",
+    "bytes": 1397,
+    "sha256": "2bd2c4ced3fb0744d5cd79f98f5a1b504a38971938c3303e34ba02282a3fa496"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/comparacao_atributos_por_semente.csv",
+    "bytes": 687,
+    "sha256": "0a0afc9f65b3d4edb341a0eeb04ec04e45dee7b385d4c91e7ddb8ae164cd028c"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/comparacao_tabelas_antes_depois.csv",
+    "bytes": 3949,
+    "sha256": "54a3543e0c539f32942c99e43bbb12849017345872444bb7109eccc7d2706cb9"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/metricas_independentes.csv",
+    "bytes": 2100,
+    "sha256": "3f4b50e657842362928f1763e87ce36a946a79a84b7c689275b5ad0d66f3ada1"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/notebooks_consolidados.json",
+    "bytes": 2465,
+    "sha256": "273c2d53cbe8b4cbf023f35e9241b2ae94991be422f28cf37b814c493e124899"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/preservacao_notebooks.json",
+    "bytes": 387,
+    "sha256": "c0ade81d5b1e1905a002e37f4f8618f48f6cd62091d5a25f1070cf84219c7508"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/Relatorio_final_auditoria.txt",
+    "bytes": 5736,
+    "sha256": "13de86e09b9cc8b3b2ace2ba60abdf75c5f38d48c58beb0cd2fbc17a904e0609"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/sincronizacao_destinos.json",
+    "bytes": 1550,
+    "sha256": "758694082f7154699d94f79fba0de8169974abe8335713f2203455d0c72031fe"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/verificacao_ablacao_independente.json",
+    "bytes": 57558,
+    "sha256": "d0fc75e74bf658c351fec9afc94983154f79b0510fc275cbde952604f268b851"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/verificacao_final_drive.json",
+    "bytes": 39584,
+    "sha256": "5d63d5e2e58b94690bb6c170f382a3c005e4308cfda6ef10ad52f6e7bbd848e4"
+  },
+  {
+    "arquivo": "outputs/auditoria_consolidada_2026-10-29/verificacoes_independentes.json",
+    "bytes": 27405,
+    "sha256": "fccd295b60bd90a0bcfce319a77258e8492d81a4391b22241071d020c25e68be"
+  },
+  {
+    "arquivo": "outputs/figures/01_motivacao_carga_co2_startup_real.png",
+    "bytes": 276740,
+    "sha256": "9eb1cc90b8aa93c4ed72b1158b859231be3d68ea107077f88328a26c2ee28744"
+  },
+  {
+    "arquivo": "outputs/figures/01_motivacao_carga_co2_startup_real.svg",
+    "bytes": 60403,
+    "sha256": "7be59bd84e85609642f438627f0f8059b1ecf417cba60ea25cd1a3a9c62e5d1e"
+  },
+  {
+    "arquivo": "outputs/figures/02_ciclo_operacional_real.png",
+    "bytes": 196347,
+    "sha256": "a7a03bacffb5e68f5de5fcdc7bf35fe87d763f60aadf7e9af834976792a33835"
+  },
+  {
+    "arquivo": "outputs/figures/02_ciclo_operacional_real.svg",
+    "bytes": 58422,
+    "sha256": "90a0f86509962a9007a1307da443eaef911af05eea7fb2f03938e690ecdc545f"
+  },
+  {
+    "arquivo": "outputs/figures/03_mesma_carga_trajetorias_opostas.png",
+    "bytes": 275344,
+    "sha256": "07d9b15c7b2e87e5e5a7fe97efbb027d76289f7cd4e85d1e16c93c06601bfb7f"
+  },
+  {
+    "arquivo": "outputs/figures/03_mesma_carga_trajetorias_opostas.svg",
+    "bytes": 70680,
+    "sha256": "9fd46a7161b89c28e3fdfcd46b37de9ad327d841860311c8043b1b05ac47acfc"
+  },
+  {
+    "arquivo": "outputs/figures/03A01_curva_aprendizagem_C.png",
+    "bytes": 93391,
+    "sha256": "306a0df497cfcaa8923435fa4bb192e6d34f8fdededca4558ed66a0606c7d528"
+  },
+  {
+    "arquivo": "outputs/figures/03A01_observado_B_C.png",
+    "bytes": 515744,
+    "sha256": "859076e921d6d863d8b9f9c02b334e8a6e4afa6596f4b4954693a8775dbb1303"
+  },
+  {
+    "arquivo": "outputs/figures/03A02_feature_importance_C_XGBoost.png",
+    "bytes": 125468,
+    "sha256": "ab1678aa7641e232b02f9d9fc0881321835ee9dbc1087369c8c76665da53f75a"
+  },
+  {
+    "arquivo": "outputs/figures/03A03_consistencia_protocolos_AB.png",
+    "bytes": 128089,
+    "sha256": "8eae921eb5b12ef3ff43f3c857aaadaa559b97a008bc0d3162836391f307fcb0"
+  },
+  {
+    "arquivo": "outputs/figures/03A03_contextos_operacionais_AB.png",
+    "bytes": 100556,
+    "sha256": "f0177fa18faf2f6d118ecc0b9164c7ff726be388d95c41b7793222cc64a8f2bf"
+  },
+  {
+    "arquivo": "outputs/figures/03A03_mae_folds_AB.png",
+    "bytes": 218717,
+    "sha256": "7572571d65a719e0ab1bc69c85fadbe52c293e2170d1bae84eb20fe8a3cc78c0"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_comparacao_2025_vs_historico_2025_erros.png",
+    "bytes": 88667,
+    "sha256": "919747a53e1f5d6733a4b2a5a8b93c50814e0beb9f008f0665fc6495551b93d5"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_comparacao_2025_vs_historico_2025_series.png",
+    "bytes": 825909,
+    "sha256": "a850069ae0c390b37647d27c789b0d9d8cfadd1d8468fc042193559135a7741b"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_curvas_carga_co2_anuais.png",
+    "bytes": 649319,
+    "sha256": "25ddd740896edf3ab010f3d22f6e0b03877c65ded6d9e0fd4d3517c900a482c7"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_distancia_curva_vs_2025.png",
+    "bytes": 102797,
+    "sha256": "e180c7b4acf6725cd0f14696451f180c26a9d3eac3c9ea9e4bada24aeecced5a"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_generalizacao_2011_2022_2025_mae_mensal.png",
+    "bytes": 148722,
+    "sha256": "d175924d25be60b0d1c5ba8a884f09ee206058fd05ae967290dcd63469d295bb"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_generalizacao_2011_2022_2025_observado_previsto.png",
+    "bytes": 282741,
+    "sha256": "c7ae23fb88f9ed984890257531a7df7eb55fc6f96f912a30970b2cba42a7b02d"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_generalizacao_2011_2022_2025_residuo_carga.png",
+    "bytes": 555449,
+    "sha256": "138900e603e6bb9bcb45c1bb71ca69f480d239b19b02993fae6cb5c454f20a91"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_intensidade_co2_anual.png",
+    "bytes": 173580,
+    "sha256": "4dc0b58dd134f00db8f1f233d1cab92af0ee9b9623f39575a30802efabcb53c9"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_mae_medio_volume_historico.png",
+    "bytes": 102510,
+    "sha256": "e7b3228f2a007807b532680488fa006f29123e60bde14958c9bed4f24153f62e"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_mae_volume_por_ano_alvo.png",
+    "bytes": 241731,
+    "sha256": "c1ecc1f0f559f8e09ceee374f4aefed866c459d6ec8564271c0feea617deddb7"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_nmae_medio_volume_historico.png",
+    "bytes": 97018,
+    "sha256": "adc1f60445cd26b461904b8a687b677e07cf1df272dc51eac240911b79fa42ec"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_operating_pct_anual.png",
+    "bytes": 191972,
+    "sha256": "02553e96571df075e8939423dfe4d2deb64c5941c535d6c2239296e72d44d660"
+  },
+  {
+    "arquivo": "outputs/figures/03A04_startups_anual.png",
+    "bytes": 158339,
+    "sha256": "3186bd2964cc74eac3618813dbeab79f1fda84f95ace9f30cbf944f700049fa4"
+  },
+  {
+    "arquivo": "outputs/figures/03A05_distribuicao_ganho_horario_B_vs_A.png",
+    "bytes": 128438,
+    "sha256": "c49dcd1a187bb0f59d2b56bfcd4b7583ee3c9b9b032431c6f70c91543ebc62a1"
+  },
+  {
+    "arquivo": "outputs/figures/03A05_ganho_trajetoria_por_contexto.png",
+    "bytes": 160899,
+    "sha256": "200bdc0173d6c8403e096ed03458928e1bbb72b51b670b31bd54855aabd0dcc8"
+  },
+  {
+    "arquivo": "outputs/figures/03A_curvas_validacao.png",
+    "bytes": 172657,
+    "sha256": "b4e25088ab1d8adbbc6d82f84e23e86ca2faa757be3486b528a3b43ecaf1bf1e"
+  },
+  {
+    "arquivo": "outputs/figures/03A_observado_vs_previsto.png",
+    "bytes": 525081,
+    "sha256": "1ca5d477317218f10f9c9785bbdbc9f42c003a102694f45ec2de3a4e600c950e"
+  },
+  {
+    "arquivo": "outputs/figures/04_startup_real_trajetoria_importa.png",
+    "bytes": 300960,
+    "sha256": "0f6dd46bded01127a14206f48f7ba500c2501d90b6b3867baa6355c244b9ca87"
+  },
+  {
+    "arquivo": "outputs/figures/04_startup_real_trajetoria_importa.svg",
+    "bytes": 62552,
+    "sha256": "2c3c40353e855b514a71ae4f85f8c81ce6cb2c56977d1a2f403dd1ecbe7291bc"
+  },
+  {
+    "arquivo": "outputs/incorporacao_artigo_2026-10-30/validacao_artigo.json",
+    "bytes": 4723,
+    "sha256": "13402d97e8b07d468c10bb21f54811f7b0bbf7ab00f6d6efeaafb94367a7f067"
+  },
+  {
+    "arquivo": "outputs/reports/03A04_delimitacao_amostra_historica.md",
+    "bytes": 4774,
+    "sha256": "33f65a1cd718f7deacd925bcf4c5a25cdf99566ed80340c4ed0db26417c282a1"
+  },
+  {
+    "arquivo": "outputs/reports/03A04_relatorio_valor_preditivo_historico.md",
+    "bytes": 14205,
+    "sha256": "6ecbbb680628a1962e250d3f729aabcc9d922bd64d47ee49f0e4de06835bece3"
+  },
+  {
+    "arquivo": "outputs/reports/03A05_relatorio_trajetoria_operacional_historico_ampliado.md",
+    "bytes": 23292,
+    "sha256": "011b2e8952781b3a633ce02e00993072160a69532d8827367919e1a5ff13f02c"
+  },
+  {
+    "arquivo": "outputs/reports/diagnostico_modelo_03A.md",
+    "bytes": 5656,
+    "sha256": "6363f8dc473d7e28b89d675f04a641b15b8a9132d9d3e33d2a12cb7891cfff3f"
+  },
+  {
+    "arquivo": "outputs/reports/fundamentacao_metodologica.md",
+    "bytes": 26681,
+    "sha256": "6418e65a98d878ca0c4156a889e535e3ab1712a57cea2eae26cca7e7690958cc"
+  },
+  {
+    "arquivo": "outputs/reports/relatorio_caracterizacao_tecnica_iatan_unit2.md",
+    "bytes": 23284,
+    "sha256": "710eed348bda01611900b19db4366bce76bd91ceb036d683dc85227d29f5d7e7"
+  },
+  {
+    "arquivo": "outputs/reports/relatorio_modelagem_preditiva_03A01.md",
+    "bytes": 7535,
+    "sha256": "ef9bb1076c0671760f44f32d4627255c9d23348f936d33b80f2a8c17e5497f92"
+  },
+  {
+    "arquivo": "outputs/reports/relatorio_modelagem_preditiva_03A02.md",
+    "bytes": 11222,
+    "sha256": "37690fd1bec91f246a35cda66c33aadd548c4ba77fb6aa094c385267353bbc35"
+  },
+  {
+    "arquivo": "outputs/reports/relatorio_modelagem_preditiva_03A03.md",
+    "bytes": 13234,
+    "sha256": "df6cffe305bbd9f7417f80fb945fa47c0ddc25dfdda84d80dcb74bde8356d0c5"
+  },
+  {
+    "arquivo": "outputs/reports/relatorio_modelagem_preditiva_3A.md",
+    "bytes": 7705,
+    "sha256": "566bc5f58013271da27260abdd11ba14d4ac9109f3a7489533ae0688b388cb89"
+  },
+  {
+    "arquivo": "outputs/reports/relatorio_selecao_unidade.md",
+    "bytes": 13826,
+    "sha256": "677f6ee939aa0201cd895c9490f778cafe77ffc2d8e62a8ea58371cc6647a316"
+  },
+  {
+    "arquivo": "outputs/reports/relatorio_tratamento_dados.md",
+    "bytes": 11306,
+    "sha256": "f7da71c828e597ddd76908746e1f796c932b0cb36e217d9c774fbbfb8ecd13ae"
+  },
+  {
+    "arquivo": "outputs/revisao_material_2026-10-30/03A05B_sensibilidade_blocos_global_rampas.png",
+    "bytes": 85400,
+    "sha256": "9fcde6799779a18f85a8ccf6cafccad5b2a12addaeaf3ab763b6c30e3d7da3fe"
+  },
+  {
+    "arquivo": "outputs/revisao_material_2026-10-30/03A05B_sensibilidade_blocos_global_rampas.svg",
+    "bytes": 20169,
+    "sha256": "7c15d0246bb81ad7aa0fac95cceb58f647a0e62ffc2f6d7d6efc80e9e4b771e9"
+  },
+  {
+    "arquivo": "outputs/revisao_material_2026-10-30/03A05C_validacao_teste_sementes.png",
+    "bytes": 131675,
+    "sha256": "63005c6e89f989259c5c2187c8a42d1753618330181c8a9b6364e26cb262de60"
+  },
+  {
+    "arquivo": "outputs/revisao_material_2026-10-30/03A05C_validacao_teste_sementes.svg",
+    "bytes": 32891,
+    "sha256": "edc3b0d234ce0b051879fc028478f32336151d095000ca112f3c64a747295b37"
+  },
+  {
+    "arquivo": "outputs/revisao_material_2026-10-30/LEIA_PRIMEIRO.md",
+    "bytes": 1224,
+    "sha256": "95a798167e122e71aedccff33f95d963b0ac39f9ab6d0504d09af7f258fc37de"
+  },
+  {
+    "arquivo": "outputs/revisao_material_2026-10-30/sincronizacao_revisao.json",
+    "bytes": 2115,
+    "sha256": "b70aeeaa7f1522fa0eaaeb7628725dc281d5e496bef1f6c41d1b7f9722d4f34d"
+  },
+  {
+    "arquivo": "outputs/revisao_material_2026-10-30/validacao_figuras_reproducao.json",
+    "bytes": 1835,
+    "sha256": "2b43a8bd7278fd5bb6bd1ad030d995509f928410b494d8d787b7e0cf4ed2f6f5"
+  },
+  {
+    "arquivo": "outputs/revisao_material_2026-10-30/validacao_integridade_e_figuras.json",
+    "bytes": 6460,
+    "sha256": "fd186b9f840d3b655afdff81f6eced27a1847e41bd9eca1df10121f3819e15b4"
+  },
+  {
+    "arquivo": "outputs/revisao_material_2026-10-30/verificacao_final_drive.json",
+    "bytes": 41207,
+    "sha256": "fa4b38d75f98510cba558480dc0b151cba915baa87b0122811c895bbf35fac66"
+  },
+  {
+    "arquivo": "outputs/tables/.gitkeep",
+    "bytes": 2,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+  },
+  {
+    "arquivo": "outputs/tables/03A01_comparacao_contextos.csv",
+    "bytes": 284,
+    "sha256": "3cfb7f3d0a0608628557e24e912e0ddad2282ecfeaa2f6dd9c4faf25bd661aaa"
+  },
+  {
+    "arquivo": "outputs/tables/03A01_comparacao_modelos.csv",
+    "bytes": 257,
+    "sha256": "438076882c99ace4f10c163326c4a8b96e5cd5023ec3d0199b9e16123306c616"
+  },
+  {
+    "arquivo": "outputs/tables/03A01_feature_shift.csv",
+    "bytes": 1557,
+    "sha256": "1b44181cc5f0ab3d02d6cf8d5bcca87e4e8a3225dfad49617b21815a8cd2361b"
+  },
+  {
+    "arquivo": "outputs/tables/03A01_previsoes_C.csv",
+    "bytes": 192591,
+    "sha256": "3280ead746924168c8e151f7cc8c4dd3e27dc7d8466e887cd7262ef3ed7da14c"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_comparacao_completa_modelos.csv",
+    "bytes": 422,
+    "sha256": "f38838bd057432aa762fc56f1df09ff24e41bc639c8561365561ebbd88785ddd"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_comparacao_contextos_xgboost.csv",
+    "bytes": 281,
+    "sha256": "ce3279a71e21d404114146ca5218c47f25592abbbdccec2a1829c85caccb3c76"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_comparacao_modelos.csv",
+    "bytes": 291,
+    "sha256": "df76f6de49bf54554c7131d3d4a5a7b24c5871ba8f59fff643362a7cc2fa94bb"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_cv_ABC_xgboost.csv",
+    "bytes": 404,
+    "sha256": "7596b69a0871042fb1b3f62300e2ef08c19d98ae3025fd429e5578f2b61aa605"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_cv_summary_xgboost.csv",
+    "bytes": 319,
+    "sha256": "ec688c0cfeaa353bd5325a797ba35022968006d82df7aa63d7e4cbddfcbacadb"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_cv_xgboost.csv",
+    "bytes": 1155,
+    "sha256": "669e6a81c55d0fbff1737b918b438739bd5a2e720fabf1f138b87dfa4b3efd97"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_feature_importance_C.csv",
+    "bytes": 658,
+    "sha256": "e078a771222457ff622f97101d19d709036827c800245b88834cbd1e0e9ec944"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_holdout_ABC_xgboost.csv",
+    "bytes": 235,
+    "sha256": "d01cec13cc14eb0a102df05fbf12b954a2328291ed4ff7846b5f14c0a89669a2"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_previsoes_xgboost.csv",
+    "bytes": 94533,
+    "sha256": "7dd05b16bff230f9caf4d0bc20031c15bc26925dc23cdb69f5b6d31fff459bbe"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_sanity_check_features.csv",
+    "bytes": 604,
+    "sha256": "06ddc21590eb2212682a2e63e9e36fe2742b09b286f65ee89c023c6adb3c9d88"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_sanity_check_folds.csv",
+    "bytes": 291,
+    "sha256": "751bf62a2a4ac62c6b75a295a4ae85538f06ac8616c78af10effc0373edf9afc"
+  },
+  {
+    "arquivo": "outputs/tables/03A02_sanity_check_holdout.csv",
+    "bytes": 309,
+    "sha256": "83f376b7adef39f30ec0c11ccf753dd6666f1f21eb79c51e01d55c5346355fa3"
+  },
+  {
+    "arquivo": "outputs/tables/03A03_best_configs_AB.json",
+    "bytes": 537,
+    "sha256": "094416336f8917f1b2d3d62a77f55595c3c6b47c681bf6b62f65840ce9cbaedd"
+  },
+  {
+    "arquivo": "outputs/tables/03A03_comparacao_busca_baseline.csv",
+    "bytes": 365,
+    "sha256": "a87665ddd40ab014e11be8ac1db9ee89a6eb055e21a7388d280db5161d7e0b61"
+  },
+  {
+    "arquivo": "outputs/tables/03A03_consistencia_protocolos_AB.csv",
+    "bytes": 428,
+    "sha256": "9d7537136fb30c49973745b1ff256694cb91fa5d88eb9494e6fe9bae758eb8a2"
+  },
+  {
+    "arquivo": "outputs/tables/03A03_contextos_operacionais_AB.csv",
+    "bytes": 276,
+    "sha256": "970c8443b150caa41080066410ea5ebd7088cf70ff4631450c22070a5e6f93ed"
+  },
+  {
+    "arquivo": "outputs/tables/03A03_holdout_AB.csv",
+    "bytes": 197,
+    "sha256": "44c26202ce115f20a259e8de2482ebd0d127e41947e6596f9c9cb0a86c09b28e"
+  },
+  {
+    "arquivo": "outputs/tables/03A03_paired_folds_AB.csv",
+    "bytes": 775,
+    "sha256": "d54121e873a9970479b575096353b64cadc267d616c0ece5285084622ff99999"
+  },
+  {
+    "arquivo": "outputs/tables/03A03_previsoes_holdout_AB.csv",
+    "bytes": 93217,
+    "sha256": "952b16397eb86f31e2bb4cbe30221b535bbd8fb05e6486fbde224076efc6906c"
+  },
+  {
+    "arquivo": "outputs/tables/03A03_tuning_results_AB.csv",
+    "bytes": 24906,
+    "sha256": "1c742d95ce72c006bdb0656f0203486025fb6bccb019f93195abdd5ff883c70a"
+  },
+  {
+    "arquivo": "outputs/tables/03A03_tuning_summary_AB.csv",
+    "bytes": 9560,
+    "sha256": "989afe2c447a796f79bda6a5f8320acc02024d98c67706c10107463dbb1f1fa0"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_auditoria_historico_iatan.csv",
+    "bytes": 1286,
+    "sha256": "bb14b55b497ad2da6b7c30ce8949991f4b8494a58d7a2c591f2020e63dd2e096"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_backtest_volume_historico_A.csv",
+    "bytes": 6496,
+    "sha256": "a85fab0094614901865290d9ed104a4ad0d87d5fa96a97dd629c2fb6a883ffd9"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_carga_zero_baixa_operacao.csv",
+    "bytes": 706,
+    "sha256": "ade3328059f4d54d7a6270408d3ac8e4346288c7c0b0709cfc141c27ab44ed68"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_comparacao_2025_vs_historico_2025.csv",
+    "bytes": 450,
+    "sha256": "915b86bf14b333752b13f346cc1ae9e45d0f4a41210b25dc46076ba0b32ff43e"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_curvas_carga_co2_por_ano.csv",
+    "bytes": 28404,
+    "sha256": "f2505ce4b1e679d5b3e1374b2999116a1bb166a9e3412700694f340d61a03ee2"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_decisao_amostral_2023_2024.csv",
+    "bytes": 1218,
+    "sha256": "4eaf86d4bd92c97bb6abac5408cbde1463ec055d93bed403b3bd52bda9b71a2a"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_drift_anual_cenario_A.csv",
+    "bytes": 5087,
+    "sha256": "f3e64ea73da97083060f21d7f8fc3e4cf8c542d0a4a2990a543cf9e98f28eb3d"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_ganho_incremental_historico_2011_2022.csv",
+    "bytes": 171,
+    "sha256": "b10ba3f90af56507e566d2b80cedfd162290ea6297f00277d217cb2f78ff3605"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_ganho_vs_1ano_A.csv",
+    "bytes": 7389,
+    "sha256": "1b6b4ab3a9c5cf4c8732dafb52a5284bb89ff1dad6ab7b15075733910c694d0e"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_generalizacao_2011_2022_para_2025.csv",
+    "bytes": 282,
+    "sha256": "4c72d0bf800005fee2f2d0647e80f8f26a8d2c22624d486b6d5f272376b6fe38"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_generalizacao_2025_diagnostico_carga.csv",
+    "bytes": 580,
+    "sha256": "da80d1673ba17b01c00843ca27994c475d20b92a201f8fbdc992e6ab3eb83819"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_generalizacao_2025_diagnostico_mensal.csv",
+    "bytes": 1348,
+    "sha256": "5f4b4d13c1397e642ea05926a50d34ec0e5ed83d704d97a0c60c2e1ab1b576d0"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_melhor_janela_por_ano_alvo.csv",
+    "bytes": 589,
+    "sha256": "5fe56d5b6ab13506637b274c5c590a7ee44e24b188cf1f2e7b9a30e376131567"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_papel_metodologico_anos.csv",
+    "bytes": 2243,
+    "sha256": "753775830be80716e451ed8945c2cecfe434f8b740f8bdf4a1b614efc216c858"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_resumo_operacional_anual.csv",
+    "bytes": 3351,
+    "sha256": "4fd459328517425ac73316f3ff20415809c36e99311802d9efc824befbadb9c5"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_resumo_volume_historico_A.csv",
+    "bytes": 853,
+    "sha256": "242917798b37838ee5dc37f3ba59d22ee18dcd37cf751ef202371fcfc9921fe8"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_similaridade_curva_vs_2025.csv",
+    "bytes": 1215,
+    "sha256": "877567802103faffa21930fe252be30f19bdb4225ffa5a0d11c058d9105aac58"
+  },
+  {
+    "arquivo": "outputs/tables/03A04_sintese_evidencias_historico.csv",
+    "bytes": 484,
+    "sha256": "723380e9ed016abec918fa0859b80fb8fd8b52473c85f1095738eaa914e8a510"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_amostra_comum_por_ano.csv",
+    "bytes": 933,
+    "sha256": "7351363113721653af6e87015db8aae064cda08eb79c0207cf951da52d231273"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_auditoria_bases_anuais.csv",
+    "bytes": 1215,
+    "sha256": "e26ab51aef6b79e347655eac21c6b2f6564400a98252af4d529bcbd5cf609c65"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_auditoria_continuidade_anos.csv",
+    "bytes": 634,
+    "sha256": "2d1b5d4198fee45b69bd6b34473ffc88a183856adcc326781e1f30e9cec1ecb6"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_auditoria_features_B.csv",
+    "bytes": 252,
+    "sha256": "c170e102efba5944bf05d8edd7171f012698cf8bbc3106c69aac5f17bc268640"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_auditoria_identidades_algebricas_features_B.csv",
+    "bytes": 148,
+    "sha256": "b24513675c0463cd8c5b5066b4d678ad6950effbcf51d33ac9291a1a0d7965cb"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_auditoria_inicio_hours_since_startup.csv",
+    "bytes": 125,
+    "sha256": "e18ac652043e784dcc44f7a11cb82313bcc5619825b6f377032ae78506555772"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_blocos_temporais.csv",
+    "bytes": 224,
+    "sha256": "4042fce9f5653afc572c712442681f2a7c87d875ab20f0d71723dec4b31dede0"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_cobertura_faixa_operacional_erros.csv",
+    "bytes": 142,
+    "sha256": "0b78d1c82763b5e4ab6ec0d397654ff1b54398d7b9e6b3acf6059f8bae7085f3"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_cobertura_faixa_operacional_features.csv",
+    "bytes": 477,
+    "sha256": "d6abf6c05a4a4521d15e3140f051bccb0eb494e705630b54e68be888942694df"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_cobertura_faixa_operacional_horas.csv",
+    "bytes": 32097,
+    "sha256": "e3b8d53f290511cf06f0b5ce682399749adb64061e407719197ca63832fe7e28"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_comparacao_contextos_operacionais.csv",
+    "bytes": 1144,
+    "sha256": "8e04c5eb0d643fc662da75a0ffd190fdd982e1db14a0d0fef500ed67d4fd6583"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_correlacao_pearson_features_B.csv",
+    "bytes": 1126,
+    "sha256": "eb547878eb5a873d2ffb299b638fb3e9e02208920b645e85473005083f365b13"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_decisao_carga_ausente_2019.csv",
+    "bytes": 603,
+    "sha256": "550368bc33108813aefb37fd04a554c2e51c7d8b618ed5d578bd8aed0175d206"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_decisao_carga_ausente_2019.xlsx",
+    "bytes": 5580,
+    "sha256": "3bb4fec76d0df45ed5bb99b7612080fa7d8ac8fe85c5140dc2fdf82804562f58"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_decisao_hours_since_startup_inicio_historico.csv",
+    "bytes": 506,
+    "sha256": "959fe63ed57b581e0412d9221ce0fcb1b301e24d03a2678e221c906f3fcd7055"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_decisoes_metodologicas.csv",
+    "bytes": 2417,
+    "sha256": "a9307d4e9368cdea64a92d912a3bfbf56d2099c73e5f880b2d245af9de6cce07"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_delimitacao_amostras_experimento.csv",
+    "bytes": 425,
+    "sha256": "f9d8132f1b71c7dd88861358b77a55b9a734af753e4db3f9b8fd36886a5f2dab"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_elegibilidade_B_por_ano.csv",
+    "bytes": 388,
+    "sha256": "0a3acf83a53ba4c1a286dec44ed9fffdbfaa5a16a377b0ad4356e9cd4a1970af"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_ganho_incremental_trajetoria.csv",
+    "bytes": 544,
+    "sha256": "855bb1d5f91b1287ee480153f15319b5daf012b7f3cfe947d00422033e77caba"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_maiores_melhorias_B.csv",
+    "bytes": 2820,
+    "sha256": "8317315233ec3021309bf3380feeb0c305e8f8f78f157de68c31db28d5caec7e"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_maiores_pioras_B.csv",
+    "bytes": 2782,
+    "sha256": "9ed5c9e075e9d92c88106efddd66f49f614da9e2a62c8d6bdb60b853667209f7"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_motivos_exclusao_amostra_comum.csv",
+    "bytes": 150,
+    "sha256": "7713a9325d04d14362a36743644bbf54c4ebf396ba41dcd9c613881b6dbf6d5c"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_pares_alta_correlacao_features_B.csv",
+    "bytes": 261,
+    "sha256": "836ae104672e3e00837620fed9b8372807eed1119d1fb344cb76a44556ff370d"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_quantis_ganho_horario_B_vs_A.csv",
+    "bytes": 237,
+    "sha256": "a29615439a663061d9bb464f02148d6a73d5250dfe1cb561b5a6edd2fd6a120e"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_resultado_final_A_B.csv",
+    "bytes": 413,
+    "sha256": "d064b74eb949f27ac8b56f9b574e766e256b445f237b8bb4e14cf2170cda121f"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_resumo_casos_extremos_B.csv",
+    "bytes": 180,
+    "sha256": "0e66f5c462e24350b94330939f5b0a2f0ac3af0ae73714382fbb15ee8b545d49"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_selecao_complexidade_A_B.csv",
+    "bytes": 503,
+    "sha256": "d5d78cc165ec4ff3883e2b888804b9e624d2ba4516bd175eb95a7abac8ee569d"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_sintese_evidencias_trajetoria_historico.csv",
+    "bytes": 2044,
+    "sha256": "a477d10d0c0ff9fc00d1133c28d8c5cd8c994892df7c5712a266298b2c28aa67"
+  },
+  {
+    "arquivo": "outputs/tables/03A05_transicoes_operacionais_por_ano.csv",
+    "bytes": 164,
+    "sha256": "377452e82cbfa41ba4a3596f3d9060a08de7c4cc438e5a2735b1310793640d27"
+  },
+  {
+    "arquivo": "outputs/tables/03A_comparacao_contextos.csv",
+    "bytes": 311,
+    "sha256": "63059cb078de64a7ee300b5bb66a522a5ed3207fa50f4fafbe5489c045032470"
+  },
+  {
+    "arquivo": "outputs/tables/03A_comparacao_modelos.csv",
+    "bytes": 196,
+    "sha256": "452d820617e2ede4f91369dc13bb0a91f7f37e49bb79469d604ab3efb346f081"
+  },
+  {
+    "arquivo": "outputs/tables/03A_diagnostico_modelo.csv",
+    "bytes": 617,
+    "sha256": "89fffcaf17df9abcd047397d7209528e525a2ecca6f853fe2a924ac8fb7441de"
+  },
+  {
+    "arquivo": "outputs/tables/03A_divisao_temporal.csv",
+    "bytes": 258,
+    "sha256": "be29a04948472607b6d2d0fedb0e251c0412f3d82530db64188de2402e539f80"
+  },
+  {
+    "arquivo": "outputs/tables/03A_previsoes_teste.csv",
+    "bytes": 133990,
+    "sha256": "876bfa1b284fa58b455ad52981ce27e8b227298136a1c16490848c08aca6a332"
+  },
+  {
+    "arquivo": "outputs/tables/auditoria_orcamento_original.csv",
+    "bytes": 1397,
+    "sha256": "2bd2c4ced3fb0744d5cd79f98f5a1b504a38971938c3303e34ba02282a3fa496"
+  },
+  {
+    "arquivo": "outputs/tables/pca_loadings.csv",
+    "bytes": 1133,
+    "sha256": "7c911af29dac6fa78b82ac2f3b83db691e6e9d6226f60464e231215246fdcbf6"
+  },
+  {
+    "arquivo": "outputs/tables/pca_variance_explained.csv",
+    "bytes": 328,
+    "sha256": "0d1807b55a4f23757dedf0b6dcc0af004de66626797719cb9cf95c50a02c92e8"
+  },
+  {
+    "arquivo": "README.md",
+    "bytes": 41686,
+    "sha256": "8f69e411b238103ddb62c8718bb89fa4adf1a0b25d038bc1ae59892b21a55c66"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Baiao_Aula_Classificacao_Avaliacao.pdf",
+    "bytes": 5313100,
+    "sha256": "d8004a15fa59a5aa11982df82bbc72b1d0e7b0d6f01a4dc0b104e1fca0faee35"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Baiao_Aula_eScience_DoE_Proveniencia.pdf",
+    "bytes": 3805499,
+    "sha256": "3096b18c9953a807603c57f931abcf4451728c04f6793a55ce56ec4a21f1b94b"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Baiao_Aula_PreProcessamento_Estruturados.pdf",
+    "bytes": 3366803,
+    "sha256": "b0705d4537722b635ad531e6bcd3c736732d731414864316c20a4b52c0b775b0"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Exemplo_Didatico_Plano_Experimentacao.xlsx",
+    "bytes": 38386,
+    "sha256": "3276530a21eafc0a2e2bb91dfffb7d5fc1c59b80c23f26fca7d14ea11bac6c4f"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Fayyad_1996_KDD.pdf",
+    "bytes": 341360,
+    "sha256": "d1e6f780ee44d6ab6f73f8e05ff66e96df7c413e1680b31c768fc36b71825d71"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/indice_materiais.csv",
+    "bytes": 5712,
+    "sha256": "120b5e93df188e842ae3ecfa1dfbb7ae4bc635d1092d87654b7d0a6406285e6a"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/LEIA_PRIMEIRO.txt",
+    "bytes": 550,
+    "sha256": "f4dcdd7809988daf46f44a63132770a8b0f3b5d005c691abc0bcc1a5abef82bd"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Liu_Yoon_2024_Objetivos_Dados.pdf",
+    "bytes": 6886036,
+    "sha256": "b2191fc83e812f37cc348edeb0979eb34b05720365ee7cd2447bee9d79a4d1b1"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Shcherbakov_2014_Ciclo_Pesquisa.pdf",
+    "bytes": 643160,
+    "sha256": "6b4ae5bffd6c6a2e452d18fbe8d5665f799be2b3dba93f2178f478c42415eb29"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Terziyan_Vitko_2024_Redes_Taxonomia.pdf",
+    "bytes": 2572479,
+    "sha256": "be763291ad9c0618c9c319f2d018ab87dcccf63df19f2d4e8e4af24fb7ec33d3"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Wilkinson_2016_Principios_FAIR.pdf",
+    "bytes": 254899,
+    "sha256": "cdddd9f4808f7e3e1f013139c3915ef4d7cdccb008fa947ef5f72b4c7b6ffde7"
+  },
+  {
+    "arquivo": "references/material_disciplina_modmat_2026-10-30/Xiong_2026_PCA_Analise_Fatorial.pdf",
+    "bytes": 1032456,
+    "sha256": "d1a0f756521cd40468066f78021dede2e6c33285b7ee3a707bd43d1e4d242353"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/alteracoes_documentais.json",
+    "bytes": 38684,
+    "sha256": "516c3efd6cbfe8edd58ae1370c7c5a41772eab7c6d888ac0c80445e0a2010cbd"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/Analise_das_novas_referencias.txt",
+    "bytes": 7144,
+    "sha256": "4d1ee8c4e9f71dc808dcf408884f788507e051730babc3f08a096f119c56a806"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/Conferencia_das_referencias.txt",
+    "bytes": 32930,
+    "sha256": "8e0b25f8c64b78b1b6c092fa90f6322ea50a05abb3b90f7df56074161c7e70e1"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/Fechamento_item_2.txt",
+    "bytes": 2270,
+    "sha256": "e0ba2fc4e062cd7d998b1c293ec5fd43714e7c5a0fe68f942fdb21becbf9cf63"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/Matriz_de_sustentacao_bibliografica.json",
+    "bytes": 148870,
+    "sha256": "f745d970c71cc9da99eb2baa66e68bb2dc28b46a1c527224b9b993941935cd2a"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/novas_fontes_selecionadas.json",
+    "bytes": 7016,
+    "sha256": "a453fbb63537f7b9c9ffbc00db8c2adcfcfaa39b170e0296f8f02f8444e31a77"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/revisao_critica_16_complementares.json",
+    "bytes": 48658,
+    "sha256": "28d2aec12af57de43265900ece784b78b7190ad3be6738a504970dd023bd5d1b"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/Revisao_critica_dos_artigos_complementares.txt",
+    "bytes": 8542,
+    "sha256": "5c8db2eb9db3cf409cd7159aaec0572cb90731fee8244502cdfab2cec2e5f297"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/verificacao_final.json",
+    "bytes": 10689,
+    "sha256": "a8121bc959881dd15014f573d8d333b8e7b3977190aa41fa127f95d3b4bdc479"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/verificacao_importacao.json",
+    "bytes": 8755,
+    "sha256": "c61abc2d98d60bdb5136f1d3b8cabc5d6ad9f84c1361fd3c640ba3b167f016c9"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/verificacao_rastreabilidade.json",
+    "bytes": 342,
+    "sha256": "02d5f9afd145907a4a0b175f552a07e7d57d208ec0ab0c4a2acf06ce15897457"
+  },
+  {
+    "arquivo": "references/metadata/auditoria_item2_2026-10-29/verificacao_visual.json",
+    "bytes": 206,
+    "sha256": "9a4b3cfb2ab0be7abb758f930730b8fa662374b031ff2617972f43e3619abb53"
+  },
+  {
+    "arquivo": "references/metadata/implementacao_novas_fontes_2026-10-29/Aplicacao_novas_fontes.json",
+    "bytes": 9532,
+    "sha256": "5477cfc9751138cd157f5d05ff3cbfe3ab9d3bf57c53e67a904f3a77d3419711"
+  },
+  {
+    "arquivo": "references/metadata/implementacao_novas_fontes_2026-10-29/correcao_carregamento.json",
+    "bytes": 1181,
+    "sha256": "f55d1fd5442029cce0e237b7d34c93e5a849fd43bb76bf08f7ac012f9c2ade78"
+  },
+  {
+    "arquivo": "references/metadata/implementacao_novas_fontes_2026-10-29/hashes_insumos.json",
+    "bytes": 715,
+    "sha256": "ce91564a5d4e333743f822d4c3a551efd400375b8c5967bdcee2c76946cefca4"
+  },
+  {
+    "arquivo": "references/metadata/implementacao_novas_fontes_2026-10-29/integracao_documental.json",
+    "bytes": 15674,
+    "sha256": "e237d6ba6fd763ab28841d5884eedea0b3c15e12bba0f14c776acac79ba73eac"
+  },
+  {
+    "arquivo": "references/metadata/implementacao_novas_fontes_2026-10-29/manifesto_entrega.json",
+    "bytes": 4117,
+    "sha256": "369777f96a6e12f739bb717e0e82b91148e8fe837bad7290bf686520f2568f51"
+  },
+  {
+    "arquivo": "references/metadata/implementacao_novas_fontes_2026-10-29/verificacao_complementos.json",
+    "bytes": 35067,
+    "sha256": "97bf9671503cf4990c7749956a86cb5920af945b56567432970bdcf53e848ae8"
+  },
+  {
+    "arquivo": "references/metadata/implementacao_novas_fontes_2026-10-29/verificacao_documental.json",
+    "bytes": 1241,
+    "sha256": "4b79949da386e069e833126f05859fa33efa942cd081be8008734b16e71be837"
+  },
+  {
+    "arquivo": "references/metadata/material_disciplina_modmat_2026-10-30.csv",
+    "bytes": 5748,
+    "sha256": "0501de8d9fc5786f74634484352504067d12cb7c4d2e1d2a73a5f323c87d26e5"
+  },
+  {
+    "arquivo": "references/metadata/pdfs_referencias_utilizadas.csv",
+    "bytes": 15038,
+    "sha256": "6ccde1ed856521b2345885bf6f70de4bd90f0b04cbcd4dbd125ec8fa7ea63699"
+  },
+  {
+    "arquivo": "references/metadata/preservacao_revisao_documental_2026-10-30.json",
+    "bytes": 32202,
+    "sha256": "dec28c55cf9438f7b450931dfdf6e3b5cf5813f17da330931f2e51a2359574e8"
+  },
+  {
+    "arquivo": "references/metadata/reference_update_manifest_2026-10-29.json",
+    "bytes": 1645,
+    "sha256": "707adb23c2245d2438558dd8d5ecf3e480a58cf0e8c7b5ef88d6b00a3050a2b9"
+  },
+  {
+    "arquivo": "references/metadata/source_registry.csv",
+    "bytes": 24808,
+    "sha256": "94363aad90c2374e48dd348e3a6703d37553c4f61793d6a82302370af4f375e7"
+  },
+  {
+    "arquivo": "references/README.md",
+    "bytes": 5361,
+    "sha256": "5ff109f55117f0bde43d1fe35d43ea5f4cbe13722f6bb5e007ea16d6edc25e12"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/A domain-informed forecasting framework for short-horizon carbon emissions prediction in power plants under reduced-history conditions.pdf",
+    "bytes": 4442153,
+    "sha256": "8de7077dc0902cf851636d8292415b631c7fded4309f416e6bd3a737bc2e1789"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/A global catalogue of CO2 emissions and co-emitted species from power plants, including high-resolution vertical and temporal profiles.pdf",
+    "bytes": 12383439,
+    "sha256": "9ab2c0189345befbd2d4ef47800e33c8dc02b4ea0a529b9f47103f8e73f799f0"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/A Multi-Plant Machine Learning Framework for Emission Prediction, Forecasting, and Control in Cement Manufacturing.pdf",
+    "bytes": 3417296,
+    "sha256": "64b8a5a142b0ed9479e1079b2c467cdf09cf5cc9cf2dd688cf255134b9d2ce05"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/A survey on concept drift adaptation.pdf",
+    "bytes": 737753,
+    "sha256": "3bb1c56b9eeae5878da926a6a7fd4e087a5fcd1da0af5bfb9c8b18b8282ddefa"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Adam - A Method for Stochastic Optimization.pdf",
+    "bytes": 584641,
+    "sha256": "eab9c73ae2ceda884b94830bda99312254bac4806f6c9f045cbab90721ecda31"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/An explainable transfer learning approach to predict carbon emission intensity of coal-fired power plants with multi-source monitoring data.pdf",
+    "bytes": 11323556,
+    "sha256": "caf003d4b7ee999be0c576325998b382923d7a1cb7e92460b91053981dd65e67"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Another look at measures of forecast accuracy.pdf",
+    "bytes": 210516,
+    "sha256": "b86b2d78457b62195faa87e2071beb3cacea2d6cb413c296dab746b00bb90a80"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Assessing the real implications for CO2 as generation from renewables increases.pdf",
+    "bytes": 1017506,
+    "sha256": "93292abc37d9c45ed216ddafd7557df730255fb80447b79301003c513e158ec7"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/CAMD’s Power Sector Emissions Data Guide.pdf",
+    "bytes": 374791,
+    "sha256": "17103f476fba3d30c7e120ddc4e47810428a3f990597dd39a91e6a1827b5f885"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Causal analysis of nitrogen oxides emissions process in coal-fired power plant with LiNGAM.pdf",
+    "bytes": 849544,
+    "sha256": "6c0351346d3f23e94954738633e49bbf234d740b43cfd45600c7166e79183775"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Comparative study of machine learning methods for carbon metering in power generation enterprises.pdf",
+    "bytes": 2015372,
+    "sha256": "cfeb658412f74d12ef029d566e006c9644a85f13927891a1ec896a794a254e6d"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Comparing Predictive Accuracy.pdf",
+    "bytes": 886795,
+    "sha256": "a071dcc079fb98ed2799f9b619c75cbcacc8bc93a65cd79ffe62fe72d1212190"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Deep Sparse Rectifier Neural Networks.pdf",
+    "bytes": 1025064,
+    "sha256": "a58d20ef28b21cf6dbfa7e15a007e6beb3eba947bf834740c1f62951cd4ffd29"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Development of Predictive Emissions Monitoring System Using Open Source Machine Learning Library - Keras - A Case Study on a Cogeneration Unit.pdf",
+    "bytes": 5602533,
+    "sha256": "8e9178f9a01ee09f975e40369b0080af13fba44f93794c8d19970372b524876c"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Domain consistent industrial decarbonisation of global coal power plants.pdf",
+    "bytes": 3117048,
+    "sha256": "62e7ec23934c6fb728991c77621015a46317191d67209c77023d9094486708de"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Dynamic Prediction of CO₂ Emissions from Coal-Fired Power Plants Based on XGBoost Hybrid Feature Selection and LSTM.pdf",
+    "bytes": 3554801,
+    "sha256": "67324d724dcdaad9115693b543866991086243b587088ca31d8d7b5c42e7d69f"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/ECMPS Reporting Instructions - Monitoring Plan.pdf",
+    "bytes": 1296025,
+    "sha256": "62c540258dd387c8fa9f6ffa018f6f9a05b849faa28e9f3d7f7a91f20ca8bb15"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Estimating Carbon Dioxide Emissions from Power Plant Water Vapor Plumes Using Satellite Imagery and Machine Learning.pdf",
+    "bytes": 6878452,
+    "sha256": "72406efeade8517ae487851da7308023170132088e601d71b473b6e149582fcf"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Evaluating time series forecasting models - an empirical study on performance estimation methods.pdf",
+    "bytes": 2322233,
+    "sha256": "0f7ccbc576f1759345fe08191d1367b831db6a4297568dd15570867290673ba6"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Greedy function approximation - A gradient boosting machine.pdf",
+    "bytes": 936718,
+    "sha256": "580690c56c437051209e5ac3cc74c86f121dffa084e836611809cf7fa6dc89e4"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/INDICE_referencias_utilizadas.csv",
+    "bytes": 14652,
+    "sha256": "3482efc9982b0e57b994cd62cc74bc95b360579ab2a4447d64e6acf1ae7892a0"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Learning representations by back-propagating errors.pdf",
+    "bytes": 485917,
+    "sha256": "d26997baf588222109d32545604a2a2ed400dc769a21fd49a5acdc4a955396ae"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Leveraging long short-term memory networks and transfer learning for the soft-measurement of flue gas flowrate from coal-fired boilers.pdf",
+    "bytes": 3231985,
+    "sha256": "3a66be19976c49bd9d82c6d9a34769ef5d99e81c448d6608247241028e6b0cfb"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Life cycle carbon footprint analysis of deep load regulation in coal-fired power plants based on machine learning - A case study of a 1000 MW unit in Hunan province.pdf",
+    "bytes": 5000144,
+    "sha256": "198019ddf0ead296de39cb67618e96d613fdf9270e157297dfc5f4b00929a595"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Machine Learning for Advanced Emission Monitoring and Reduction Strategies in Fossil Fuel Power Plants.pdf",
+    "bytes": 1257702,
+    "sha256": "ff480cd076edd3bdfff056687cdcc2b8c3160b5de04f37d0672d4a0495ec6cc4"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Multi-Factor Carbon Emissions Prediction in Coal-Fired Power Plants - A Machine Learning Approach for Carbon Footprint Management.pdf",
+    "bytes": 6060739,
+    "sha256": "510788ef3622c4ead1d3793c33577b2fa1bf31a0ed40ea77c71fa57532ea8ce8"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation.pdf",
+    "bytes": 759286,
+    "sha256": "db01ac8fabef3064a0297bfcf64fb9791bf35c4d03be7a51f5862260adfca206"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Predicting CO and NOx emissions from gas turbines - novel data and a benchmark PEMS.pdf",
+    "bytes": 2636536,
+    "sha256": "56676ce0b6eab6754f424f88d682871b88568918b40d3e8769f5423d052bcbe0"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Predicting power plant emissions using public data and machine learning.pdf",
+    "bytes": 2436916,
+    "sha256": "1f9f95af8c0b5f5255f49f9a804d56600f4b554003c7ec44aa41aa4532f06cc8"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Principal component analysis - a review and recent developments.pdf",
+    "bytes": 819176,
+    "sha256": "ff78d423e31cf41081df5a3e6460adcc0aefe41a02ec0c968469b0a9b2ee9a9c"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Random Search for Hyper-Parameter Optimization.pdf",
+    "bytes": 728274,
+    "sha256": "01e88a175a36afa399e05dc97dce9c5de980130445269cc0e5100d0471887029"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Tabular Machine Learning Methods for Predicting Gas Turbine Emissions.pdf",
+    "bytes": 1108321,
+    "sha256": "85753940ed57915855b9d21b366a78e9d0d178407750e59732f72cc85825cb2b"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/The Jackknife and the Bootstrap for General Stationary Observations.pdf",
+    "bytes": 240313,
+    "sha256": "d55f22606e7dfedfe98de550b81f00708963b23ed718c5ef17d98321bd83f3ab"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/To Explain or to Predict -.pdf",
+    "bytes": 300394,
+    "sha256": "9052507576bd8c6e076be08d0addb028a4ba67198ce1e447f0cc38dcb5a88faa"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Trust-Aware Predictive Emissions Monitoring for Gas Turbine Fleets with Limited Labelled Data.pdf",
+    "bytes": 10987428,
+    "sha256": "82ac1dd5a23d89e5444a4d97480aee08af4634965d21fa4392c31d7d486d50ea"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/Why do tree-based models still outperform deep learning on typical tabular data -.pdf",
+    "bytes": 1334905,
+    "sha256": "9c640759c303b9c783559a0da5d8327fdcea01e7a718322f08a746bc9f37a0b0"
+  },
+  {
+    "arquivo": "references/referencias_utilizadas/XGBoost - A Scalable Tree Boosting System.pdf",
+    "bytes": 944793,
+    "sha256": "52bc282c922a239134ee4d6f4367c58bf920a9bdd53acbb3b2aa3342e2bb7214"
+  },
+  {
+    "arquivo": "references/source_registry.csv",
+    "bytes": 24808,
+    "sha256": "94363aad90c2374e48dd348e3a6703d37553c4f61793d6a82302370af4f375e7"
+  },
+  {
+    "arquivo": "scripts/gerar_figuras_complementos.py",
+    "bytes": 6263,
+    "sha256": "d4c73e22f13b12fc166980948f8750b5f429d69a09e4c679defe0b742a7c074f"
+  }
+]

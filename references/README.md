@@ -1,6 +1,6 @@
-# Biblioteca de referências da versão revisada em 29/10/2026
+# Biblioteca de referências da versão revisada em 30/10/2026
 
-Este diretório acompanha a versão atual do artigo e contém o registro das **40 referências do artigo**, complementado pelas fontes específicas dos notebooks.
+Este diretório acompanha a versão atual do artigo e contém o registro das **41 referências do artigo**, complementado pelas fontes específicas dos notebooks.
 
 As referências fornecidas pelo usuário foram conferidas no texto original. Quando uma fonte nova cobria de forma mais direta a mesma afirmação de uma referência temática anterior, a nova fonte foi priorizada. Por esse motivo, F. Liu e Li (2025), Tu et al. (2024) e Zhou et al. (2023) deixaram de integrar a bibliografia final do artigo.
 
@@ -39,7 +39,10 @@ O [catálogo atualizado](metadata/source_registry.csv) e o [índice dos PDFs](me
 
 ## Materiais da disciplina selecionados em 30/10/2026
 
-O [catálogo separado](metadata/material_disciplina_modmat_2026-10-30.csv) registra nove PDFs e uma planilha úteis à documentação de Modelagem Matemática com IA. O [parecer](../docs/parecer_material_disciplina_modmat_2026-10-30.md) distingue fontes aplicadas ao mapa documental de consultas condicionais. A bibliografia do artigo permanece com suas 40 referências. As cópias integrais estão no acervo privado `references/material_disciplina_modmat_2026-10-30/`; não foram incluídas neste repositório público.
+O [catálogo separado](metadata/material_disciplina_modmat_2026-10-30.csv) registra nove PDFs e uma planilha úteis à documentação de Modelagem Matemática com IA. O [parecer](../docs/parecer_material_disciplina_modmat_2026-10-30.md) distingue fontes aplicadas ao mapa documental de consultas condicionais. Após a incorporação editorial autorizada em 30/10/2026, Fayyad, Piatetsky-Shapiro e Smyth (1996) passou a fundamentar o encadeamento metodológico. O artigo contém 41 referências. As demais fontes da triagem continuam como apoio documental ou consulta, sem inclusão automática na bibliografia. As cópias integrais estão no acervo privado `references/material_disciplina_modmat_2026-10-30/`; não foram incluídas neste repositório público.
 
 
 [Materiais selecionados no Drive](https://drive.google.com/drive/folders/1uRmBmdakWIsggK61ddGq6fCnd4gA_pMa): nove PDFs e uma planilha. O [registro de sincronização desta revisão](../outputs/revisao_material_2026-10-30/sincronizacao_revisao.json) confirma o upload de 42 de 42 itens e a identidade do relatório por download.
+
+
+A nova citação não introduz outra análise ou experimento. Seu PDF já está preservado na pasta privada de materiais selecionados, identificada acima; o índice dos PDFs utilizados registra esse caminho e sua identidade. Os 36 PDFs da biblioteca anterior permanecem preservados.

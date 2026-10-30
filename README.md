@@ -518,3 +518,10 @@ A matriz de [16 contribuições](docs/matriz_contribuicoes_modmat_2026-10-30.csv
 
 
 [Materiais selecionados no Drive](https://drive.google.com/drive/folders/1uRmBmdakWIsggK61ddGq6fCnd4gA_pMa): nove PDFs e uma planilha. O [registro de sincronização desta revisão](outputs/revisao_material_2026-10-30/sincronizacao_revisao.json) confirma o upload de 42 de 42 itens e a identidade do relatório por download.
+
+
+## Incorporação das melhorias ao artigo em 30/10/2026
+
+O artigo incorpora a organização do encadeamento metodológico apoiada em Fayyad, Piatetsky-Shapiro e Smyth (1996), explicita a função da ablação, da sensibilidade temporal e das repetições entre sementes e esclarece o uso do conhecimento operacional na construção dos atributos. A Figura D1 apresenta a sensibilidade dos resultados global e de rampas aos blocos de calendário; a Figura D2 mostra a inversão entre validação e teste nas cinco sementes. Ambas são chamadas no texto principal e permanecem junto às análises do Apêndice D.
+
+A versão foi conferida visualmente nas 31 páginas. As 29 tabelas e as sete equações foram preservadas integralmente; o documento contém três figuras e 41 referências. O escopo experimental permanece encerrado em 03A.05C, sem novo treinamento, novos períodos ou mudanças nos notebooks e resultados. O [registro de incorporação e validação](docs/incorporacao_melhorias_artigo_2026-10-30.md) distingue esta versão da etapa anterior, em que o artigo havia sido preservado. O PDF de Fayyad permanece no [acervo privado selecionado](https://drive.google.com/drive/folders/1uRmBmdakWIsggK61ddGq6fCnd4gA_pMa).
