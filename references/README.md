@@ -40,3 +40,6 @@ O [catálogo atualizado](metadata/source_registry.csv) e o [índice dos PDFs](me
 ## Materiais da disciplina selecionados em 30/10/2026
 
 O [catálogo separado](metadata/material_disciplina_modmat_2026-10-30.csv) registra nove PDFs e uma planilha úteis à documentação de Modelagem Matemática com IA. O [parecer](../docs/parecer_material_disciplina_modmat_2026-10-30.md) distingue fontes aplicadas ao mapa documental de consultas condicionais. A bibliografia do artigo permanece com suas 40 referências. As cópias integrais estão no acervo privado `references/material_disciplina_modmat_2026-10-30/`; não foram incluídas neste repositório público.
+
+
+[Materiais selecionados no Drive](https://drive.google.com/drive/folders/1uRmBmdakWIsggK61ddGq6fCnd4gA_pMa): nove PDFs e uma planilha. O [registro de sincronização desta revisão](../outputs/revisao_material_2026-10-30/sincronizacao_revisao.json) confirma o upload de 42 de 42 itens e a identidade do relatório por download.

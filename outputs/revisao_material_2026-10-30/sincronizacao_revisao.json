@@ -1,0 +1,45 @@
+{
+  "data_local": "2026-10-30",
+  "fuso": "America/Sao_Paulo",
+  "escopo": "Somente Modelagem Matemática com IA até 03A.05C",
+  "github": {
+    "situacao": "conteudo_publicado_e_conferido",
+    "repositorio": "https://github.com/prcgui/co2-cems-thermal-modeling",
+    "commit_conteudo": "0c25b70e6d820d95d9576aae55ccb252d4f44b9d",
+    "relatorio_baixado_do_github_identico": true
+  },
+  "drive": {
+    "situacao": "upload_concluido_e_conferido",
+    "pasta_projeto": "https://drive.google.com/drive/folders/1ONZBhbSfVpuN9TNTstsAmCQSZBZKv0l9",
+    "pasta_documentos": "https://drive.google.com/drive/folders/14j-GPx_h6OQ21WfrFpTu5RZ5vE5lAsv5",
+    "pasta_referencias_selecionadas": "https://drive.google.com/drive/folders/1uRmBmdakWIsggK61ddGq6fCnd4gA_pMa",
+    "upload_pacote_arquivos": 35,
+    "upload_pacote_itens_incluindo_pastas": 42,
+    "upload_pacote_itens_concluidos": 42,
+    "pdfs_referencias_conferidos_na_listagem": 9,
+    "planilhas_didaticas": 1,
+    "relatorio_baixado_identico": true,
+    "pdf_fayyad_baixado_identico": true
+  },
+  "hashes_verificados": {
+    "relatorio_pdf_sha256": "cad63fe7105f0386bcbc1e406d17dc7a156656110491e7b944113e0b2500c62f",
+    "fayyad_pdf_sha256": "d1e6f780ee44d6ab6f73f8e05ff66e96df7c413e1680b31c768fc36b71825d71",
+    "artigo_principal_sha256": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372"
+  },
+  "validacao": {
+    "verificacoes_auditoria_repetida": 376,
+    "verificacoes_integridade_apresentacao": 38,
+    "verificacoes_script_portatil": 12,
+    "falhas": 0,
+    "novos_treinamentos": 0,
+    "novos_experimentos": 0,
+    "notebooks_preservados": 11,
+    "arquivos_cientificos_preexistentes_preservados": 237,
+    "arquivos_ciencia_dados_preservados": 360
+  },
+  "limites": [
+    "Sem reexecução integral dos onze notebooks nesta rodada; engenharia de atributos executada em isolamento e modelos salvos recarregados.",
+    "Vídeos examinados por amostragem visual, sem transcrição integral.",
+    "Freiesleben et al. (2020): apenas resumo editorial consultado, PDF integral não obtido."
+  ]
+}

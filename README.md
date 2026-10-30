@@ -515,3 +515,6 @@ A avaliação tem destino exclusivo no projeto de Modelagem Matemática com IA, 
 
 
 A matriz de [16 contribuições](docs/matriz_contribuicoes_modmat_2026-10-30.csv) relaciona fontes a notebooks e células; o [inventário dos 84 materiais](docs/inventario_material_examinado_2026-10-30.csv) registra o exame efetivo e seus limites. Foram repetidas as 376 verificações de modelos e previsões e aprovadas mais 38 verificações de integridade e apresentação. As [duas figuras e seus registros](outputs/revisao_material_2026-10-30/) reapresentam resultados salvos de 5B e 5C. O [script de geração](scripts/gerar_figuras_complementos.py) não treina modelos nem reamostra perdas.
+
+
+[Materiais selecionados no Drive](https://drive.google.com/drive/folders/1uRmBmdakWIsggK61ddGq6fCnd4gA_pMa): nove PDFs e uma planilha. O [registro de sincronização desta revisão](outputs/revisao_material_2026-10-30/sincronizacao_revisao.json) confirma o upload de 42 de 42 itens e a identidade do relatório por download.
