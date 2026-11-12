@@ -1,0 +1,33 @@
+# Dados grandes
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Arquivos intermediários
+pipeline/*.parquet
+
+# Temporários
+*.tmp
+*.zip
+
+# Python
+__pycache__/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Ambiente e execuções interrompidas
+.venv/
+venv/
+outputs/reproducibility/*.failed.ipynb
+*.log
+
+# Credenciais
+.env
+*.key
+
+# Arquivos locais de execução
+__pycache__/
+*.py[cod]
+.cache/
+.ipynb_checkpoints/

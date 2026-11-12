@@ -1,0 +1,58 @@
+{
+  "rotina": "apresentação de CSVs existentes; sem treino ou nova reamostragem",
+  "verificacoes": [
+    {
+      "verificacao": "40 combinações únicas de métricas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Média e DP para figura MLP/A/teste",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Média e DP para figura MLP/A/validacao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Média e DP para figura MLP/B/teste",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Média e DP para figura MLP/B/validacao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Média e DP para figura XGBoost/A/teste",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Média e DP para figura XGBoost/A/validacao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Média e DP para figura XGBoost/B/teste",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Média e DP para figura XGBoost/B/validacao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Ordenação inversa confirmada em dez pares por partição",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Figura 5B usa três comprimentos global",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Figura 5B usa três comprimentos rampas",
+      "aprovada": true
+    }
+  ],
+  "fontes": {
+    "outputs/auditoria_consolidada_2026-10-29/5C/metricas_e_tempos.csv": "22cd44111ce8e3bc073e080d136885cf7d0c8e03c788e43d1e1ab15f3d0b6a36",
+    "outputs/auditoria_consolidada_2026-10-29/5C/resumo_sementes.csv": "67a5e485243b889b42b44b012521e55c71c58cefe7d86077fe39d300c81cc890",
+    "outputs/auditoria_consolidada_2026-10-29/5B/sensibilidade_blocos_calendario.csv": "2c87c6d868229fbad4ed28380a41129c51cd00fc2817553cd7bdc2c49e2612b2"
+  }
+}

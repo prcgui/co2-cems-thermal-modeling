@@ -1,0 +1,16 @@
+# Versões verificadas na reprodução de 24/10/2026, em Python 3.12.14/Linux.
+# O lock descreve o ambiente desta reprodução, não o Python original.
+-c requirements-reproduction.lock
+numpy
+pandas
+matplotlib
+requests
+scikit-learn
+pyarrow
+ipython
+tensorflow
+xgboost
+nbclient
+nbformat
+ipykernel
+tabulate

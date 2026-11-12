@@ -1,0 +1,31 @@
+{
+  "data_local": "2026-10-30",
+  "github": {
+    "co2-cems-thermal-modeling": {
+      "situacao": "publicado_e_conferido",
+      "commit_conteudo": "versao-documentada",
+      "artigo_sha256": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372",
+      "url": "https://github.com/prcgui/co2-cems-thermal-modeling"
+    },
+    "co2-cems-process-data-science": {
+      "situacao": "publicado_e_conferido",
+      "commit_conteudo": "6ea44d822e9645a309ae1819a7e4c4baf43d7b83",
+      "artigo_sha256": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372",
+      "url": "https://github.com/prcgui/co2-cems-process-data-science"
+    }
+  },
+  "drive": {
+    "situacao": "atualizado_e_conferido",
+    "data_local": "2026-10-30",
+    "pasta": "https://drive.google.com/drive/folders/1ONZBhbSfVpuN9TNTstsAmCQSZBZKv0l9",
+    "biblioteca_pdfs": "https://drive.google.com/drive/folders/1bZn3RDuNZvBC2fsaU_hivr_rvWdd9MO3",
+    "arquivos_enviados": 288,
+    "itens_upload_incluindo_pastas": "303 de 303 concluídos",
+    "notebooks_no_pacote": 11,
+    "pdfs_confirmados_na_pasta": 36,
+    "artigo_sha256_conferido_por_download": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372",
+    "pdf_kunsch_sha256_conferido_por_download": "d55f22606e7dfedfe98de550b81f00708963b23ed718c5ef17d98321bd83f3ab",
+    "pastas_e_dados_anteriores_preservados": true,
+    "observacao": "A primeira tentativa teve 32 arquivos não encontrados. Reenvio de diretório com caminhos curtos concluiu todos os 303 itens."
+  }
+}
