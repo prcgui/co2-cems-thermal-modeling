@@ -1,0 +1,10 @@
+*.pdf binary
+*.png binary
+*.docx binary
+*.xlsx binary
+*.keras binary
+*.joblib binary
+*.parquet binary
+*.npz binary
+*.csv -text -whitespace
+*.svg -whitespace

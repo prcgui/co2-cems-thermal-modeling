@@ -1,0 +1,23 @@
+# Dados volumosos
+data/raw/*
+!data/raw/README.md
+data/interim/*
+!data/interim/README.md
+data/processed/*
+!data/processed/README.md
+pipeline/*.parquet
+
+# Ambiente e temporários
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.cache/
+.ipynb_checkpoints/
+*.tmp
+*.zip
+*.log
+
+# Credenciais
+.env
+*.key
