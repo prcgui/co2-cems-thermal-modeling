@@ -50,4 +50,4 @@ A seleção da unidade e do histórico é retrospectiva. O período de teste foi
 
 O estudo envolve uma unidade e períodos específicos; não demonstra generalização para outras usinas, efeito causal dos atributos ou estabilidade instrumental ao longo dos anos. Cinco sementes descrevem variação de treinamento nas mesmas horas, não cinco períodos independentes. A sensibilidade em blocos não produz intervalos de previsão calibrados.
 
-Os procedimentos, as equações e as referências completas estão no [artigo](../artigo/Artigo_CO2_Modelagem_Matematica_IA.docx) e nos [notebooks](../notebooks/). As métricas e figuras estão em [resultados](../outputs/README.md); as fontes são identificadas no [catálogo bibliográfico](../references/source_registry.csv).
+Os procedimentos, as equações e as referências completas estão no [artigo](../artigo/Artigo_CO2_Modelagem_Matematica_IA.pdf) e nos [notebooks](../notebooks/). As métricas e figuras estão em [resultados](../outputs/README.md); as fontes são identificadas no [catálogo bibliográfico](../references/source_registry.csv).

@@ -11,7 +11,7 @@ As métricas abaixo pertencem às comparações específicas indicadas. MAE é e
 | 03A.05B — blocos de calendário | Sensibilidade das diferenças de perda a blocos de 1, 3 e 7 dias; percentis exploratórios | [Resultados](03A05B/sensibilidade_blocos_calendario.csv) |
 | 03A.05C — cinco sementes | XGBoost tem menor MAE nos dez pares de teste; a ordenação entre famílias se inverte na validação | [Resumo](03A05C/resumo_sementes.csv) |
 
-A comparação final de 03A.05 inclui reajuste com outubro; 03A.05C mantém outubro somente para validação. As métricas dos dois protocolos não devem ser fundidas. As conclusões e limitações estão no [artigo](../artigo/Artigo_CO2_Modelagem_Matematica_IA.docx) e na [metodologia](../docs/metodologia.md).
+A comparação final de 03A.05 inclui reajuste com outubro; 03A.05C mantém outubro somente para validação. As métricas dos dois protocolos não devem ser fundidas. As conclusões e limitações estão no [artigo](../artigo/Artigo_CO2_Modelagem_Matematica_IA.pdf) e na [metodologia](../docs/metodologia.md).
 
 ## Figuras
 
